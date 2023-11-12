@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-color:#F6FAFF ;
+}
+
+main {
+    font-family: var(--body-font);
+}
+
+.custom_container{
+    @apply w-[75%] m-auto max-lg:w-[85%] max-sm:w-[90%]
+}
+
+/* .section7 */
+
+.not_active{
+    @apply px-5 py-2 text-[#032D6C] flex items-center justify-center rounded-md border border-[#032D6C] max-sm:py-1 max-sm:px-3
+}
+
+.footer_flex{
+    @apply flex items-center gap-4
+}
