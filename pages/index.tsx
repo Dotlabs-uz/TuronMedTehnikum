@@ -17,12 +17,14 @@ export default function Home() {
     return (
         <>
             <Header />
-            <main>
+            <main className="overflow-hidden relative">
                 <section className="section_1">
-                    <div className="rounded-b-[80px] max-xl:rounded-b-[70px] max-lg:rounded-b-[50px] max-md:rounded-b-[40px] max-sm:rounded-b-[30px] absolute top-0 left-0 z-[1] bg-[#0000ff3e] w-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px]">
+                    <div className="w-[160%] max-[450px]:w-[190%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2  rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px]">
+                        <div className="bg-[url('/images/32.JPG')] bg-center bg-no-repeat bg-cover w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2">
 
+                        </div>
                     </div>
-                    <div className="rounded-b-[80px] max-xl:rounded-b-[70px] max-lg:rounded-b-[50px] max-md:rounded-b-[40px] max-sm:rounded-b-[30px] bg-[url('/images/32.JPG')] bg-center h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px] bg-no-repeat bg-cover flex flex-col items-center pt-[300px] max-xl:pt-[200px] max-md:pt-[150px] max-sm:pt-[120px] relative">
+                    <div className="rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px] flex flex-col items-center pt-[300px] max-xl:pt-[200px] max-md:pt-[150px] max-sm:pt-[120px] relative">
                         <p className="z-10 text-4xl max-xl:text-3xl max-lg:text-2xl max-sm:text-xl text-white">
                             welcome to School
                         </p>
