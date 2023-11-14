@@ -338,7 +338,7 @@ export default function Home() {
 
                 <section className="section_6 mt-20 max-xl:mt-10">
                     <p className="text-[#032D6C] text-4xl max-xl:text-3xl font-bold text-center mb-14 max-xl:mb-7">
-                        Our Expert Teachers.
+                        Our Expert Teachers
                     </p>
                     <div className="flex items-center justify-center gap-10 max-lg:gap-5 max-sm:gap-4 max-[400px]:gap-2 max-lg:flex-wrap m-auto custom_container">
                         <Image
