@@ -445,6 +445,7 @@ export default function Home() {
                                                 alt=""
                                                 className="m-auto"
                                             />
+                                            
                                             <p className="mt-5 max-w-[700px] m-auto text-center font-bold text-[#032D6C]">
                                                 ``My university experience has
                                                 been outstanding, thanks to the
@@ -455,7 +456,7 @@ export default function Home() {
                                                 making lifelong connections
                                                 along the way.``
                                             </p>
-                                            
+
                                             <Image
                                                 src={`/images/${item}.jpg`}
                                                 width={66}
