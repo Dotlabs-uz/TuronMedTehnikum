@@ -19,7 +19,8 @@ export default function Home() {
             <Header />
             <main className="overflow-hidden relative">
                 <section className="section_1">
-                    <div className="w-[160%] max-[450px]:w-[190%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2  rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px]">\
+                    <div className="w-[160%] max-[450px]:w-[190%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2  rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px]">
+                        \
                         <div className="bg-[url('/images/32.JPG')] bg-center bg-no-repeat bg-cover w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
                         <div className="bg-[#0000ff52] w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
                     </div>
@@ -399,30 +400,14 @@ export default function Home() {
                         </div>
 
                         <div className="mt-10 max-md:mt-5 grid grid-cols-4 auto-rows-[250px] max-xl:auto-rows-[160px] max-lg:auto-rows-[140px] max-md:auto-rows-[100px] max-sm:auto-rows-[70px]  max-[400px]:auto-rows-[60px] gap-5 max-md:gap-2">
-                            <div className="bg-[url('/images/1.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-1 row-end-3">
-                                
-                            </div>
-                            <div className="bg-[url('/images/2.JPG')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-1 row-end-2">
-                                
-                            </div>
-                            <div className="bg-[url('/images/3.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-1 row-end-2">
-                                
-                            </div>
-                            <div className="bg-[url('/images/4.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-3 row-end-5">
-                                
-                            </div>
-                            <div className="bg-[url('/images/32.JPG')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-2 row-end-5">
-                                
-                            </div>
-                            <div className="bg-[url('/images/9.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-2 row-end-4">
-                                
-                            </div>
-                            <div className="bg-[url('/images/18.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-4 row-start-5 row-end-6">
-                                
-                            </div>
-                            <div className="bg-[url('/images/25.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-4 row-end-6">
-                                
-                            </div>
+                            <div className="bg-[url('/images/1.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-1 row-end-3"></div>
+                            <div className="bg-[url('/images/2.JPG')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-1 row-end-2"></div>
+                            <div className="bg-[url('/images/3.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-1 row-end-2"></div>
+                            <div className="bg-[url('/images/4.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-3 row-end-5"></div>
+                            <div className="bg-[url('/images/32.JPG')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-2 row-end-5"></div>
+                            <div className="bg-[url('/images/9.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-2 row-end-4"></div>
+                            <div className="bg-[url('/images/18.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-4 row-start-5 row-end-6"></div>
+                            <div className="bg-[url('/images/25.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-4 row-end-6"></div>
                         </div>
                     </div>
                 </section>
@@ -452,35 +437,39 @@ export default function Home() {
                             {[1, 3, 4, 5, 6, 7, 8, 9].map(
                                 (item: any, index: any) => (
                                     <SwiperSlide key={item}>
-                                        <Image
-                                            src={"/swiper-bottom1.png"}
-                                            width={40}
-                                            height={40}
-                                            alt=""
-                                            className="m-auto"
-                                        />
-                                        <p className="mt-5 max-w-[700px] m-auto text-center font-bold text-[#032D6C]">
-                                            ``My university experience has been
-                                            outstanding, thanks to the dedicated
-                                            faculty, diverse opportunities, and
-                                            a supportive community. It`s where
-                                            I`ve grown academically and
-                                            personally, making lifelong
-                                            connections along the way.``
-                                        </p>
-                                        <Image
-                                            src="/swiper-bottom2.png"
-                                            width={66}
-                                            height={66}
-                                            className="m-auto mt-6"
-                                            alt=""
-                                        />
-                                        <p className="font-bold text-[#032D6C] text-center mt-1">
-                                            Twink Carrol
-                                        </p>
-                                        <p className=" text-gray-700 text-center mt-1 mb-10">
-                                            Graduate of 2022,Department of CSE
-                                        </p>
+                                        <div className="bg-[#F6FAFF]">
+                                            <Image
+                                                src={"/swiper-bottom1.png"}
+                                                width={40}
+                                                height={40}
+                                                alt=""
+                                                className="m-auto"
+                                            />
+                                            <p className="mt-5 max-w-[700px] m-auto text-center font-bold text-[#032D6C]">
+                                                ``My university experience has
+                                                been outstanding, thanks to the
+                                                dedicated faculty, diverse
+                                                opportunities, and a supportive
+                                                community. It`s where I`ve grown
+                                                academically and personally,
+                                                making lifelong connections
+                                                along the way.``
+                                            </p>
+                                            <Image
+                                                src={`/images/${item}.jpg`}
+                                                width={66}
+                                                height={66}
+                                                className="m-auto mt-6"
+                                                alt=""
+                                            />
+                                            <p className="font-bold text-[#032D6C] text-center mt-1">
+                                                {item}
+                                            </p>
+                                            <p className=" text-gray-700 text-center mt-1 mb-10">
+                                                {item} Graduate of
+                                                2022,Department of CSE
+                                            </p>{" "}
+                                        </div>
                                     </SwiperSlide>
                                 )
                             )}
