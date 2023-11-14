@@ -455,6 +455,7 @@ export default function Home() {
                                                 making lifelong connections
                                                 along the way.``
                                             </p>
+                                            
                                             <Image
                                                 src={`/images/${item}.jpg`}
                                                 width={66}
