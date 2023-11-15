@@ -16,8 +16,7 @@ export default function Home() {
             <main className="overflow-hidden relative">
                 <section className="section_1">
                     <div className="w-[160%] max-[450px]:w-[190%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2  rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px]">
-                        \
-                        <div className="bg-[url('/images/32.JPG')] bg-center bg-no-repeat bg-cover w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
+                        <div className="bg-[url('/section1.jpg')] bg-center bg-no-repeat bg-cover w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
                         <div className="bg-[#0000ff52] w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
                     </div>
                     <div className="rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px] flex flex-col items-center pt-[300px] max-xl:pt-[200px] max-md:pt-[150px] max-sm:pt-[120px] relative">
@@ -288,7 +287,7 @@ export default function Home() {
                         <div className="w-full max-lg:w-3/4 max-md:w-full bg-white">
                             <div className="w-full bg-[#E6EDF8] py-3">
                                 <p className="text-[#032D6C] text-[24px] font-bold text-center">
-                                    Business
+                                Feldsher akusherlik ishi
                                 </p>
                             </div>
                             <Image
@@ -303,11 +302,11 @@ export default function Home() {
                         <div className="w-full max-lg:w-3/4  max-md:w-full bg-white">
                             <div className="w-full bg-[#E6EDF8] py-3">
                                 <p className="text-[#032D6C] text-[24px] font-bold text-center">
-                                    Business
+                                Stomatologiya
                                 </p>
                             </div>
                             <Image
-                                src={"/section5/section5_2.png"}
+                                src={"/section5/section5_2.jpg"}
                                 width={200}
                                 height={200}
                                 alt=""
@@ -318,7 +317,22 @@ export default function Home() {
                         <div className="w-full max-lg:w-3/4  max-md:w-full bg-white">
                             <div className="w-full bg-[#E6EDF8] py-3">
                                 <p className="text-[#032D6C] text-[24px] font-bold text-center">
-                                    Business
+                                    Hamshiralik ishi
+                                </p>
+                            </div>
+                            <Image
+                                src={"/section5/section5_3.png"}
+                                width={200}
+                                height={200}
+                                alt=""
+                                className="my-5 m-auto"
+                            />
+                        </div>
+
+                        <div className="w-full max-lg:w-3/4  max-md:w-full bg-white">
+                            <div className="w-full bg-[#E6EDF8] py-3">
+                                <p className="text-[#032D6C] text-[24px] font-bold text-center">
+                                    Hamshiralik ishi
                                 </p>
                             </div>
                             <Image

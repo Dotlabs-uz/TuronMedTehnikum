@@ -24,7 +24,7 @@ function Header() {
     };
 
     return (
-        <header className="w-full absolute top-0 left-0 bg-[#F6FAFF] z-10">
+        <header className="w-full absolute top-0 left-0 bg-[#F6FAFF] z-50">
             <div className="w-[80%] max-md:w-[95%] p-3 m-auto flex items-center justify-between gap-5">
                 <Image
                     src="/logo.png"

@@ -114,11 +114,7 @@ function Footer() {
                             </div>
                             <div className="footer_flex">
                                 <FiPhoneCall size={25} color="white" />
-                                01712345678
-                            </div>
-                            <div className="footer_flex">
-                                <FiPhoneCall size={25} color="white" />
-                                01987654321
+                                <a href="tel:+998990381200">+998990381200</a>
                             </div>
                         </div>
                     </div>
