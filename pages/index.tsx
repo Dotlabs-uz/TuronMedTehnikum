@@ -3,15 +3,11 @@ import Header from "@/components/Header";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import { BiChevronRight } from "react-icons/bi";
-import { BsWhatsapp, BsInstagram, BsArrowRightCircle } from "react-icons/bs";
-import { FiFacebook, FiPhoneCall } from "react-icons/fi";
-import { PiTelegramLogo } from "react-icons/pi";
-import { IoLocationOutline } from "react-icons/io5";
-import { TfiEmail } from "react-icons/tfi";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import Footer from "@/components/Footer";
 
 export default function Home() {
     return (
@@ -431,10 +427,10 @@ export default function Home() {
                                 clickable: true,
                             }}
                             modules={[EffectFade, Autoplay, Pagination]}
-                            onSlideChange={() => console.log("slide change")}
-                            onSwiper={(swiper: any) => console.log(swiper)}
+                            // onSlideChange={() => console.log("slide change")}
+                            // onSwiper={(swiper: any) => console.log(swiper)}
                         >
-                            {[1, 3, 4, 5, 6, 7, 8, 9].map(
+                            {[1,2, 3, 4].map(
                                 (item: any, index: any) => (
                                     <SwiperSlide key={item}>
                                         <div className="bg-[#F6FAFF]">
@@ -458,10 +454,10 @@ export default function Home() {
                                             </p>
 
                                             <Image
-                                                src={`/images/${item}.jpg`}
-                                                width={66}
-                                                height={66}
-                                                className="m-auto mt-6"
+                                                src={`/section6/${item}.jpg`}
+                                                width={150}
+                                                height={150}
+                                                className="m-auto mt-6 rounded-md"
                                                 alt=""
                                             />
                                             <p className="font-bold text-[#032D6C] text-center mt-1">
@@ -479,129 +475,7 @@ export default function Home() {
                     </div>
                 </section>
             </main>
-            <footer className="mt-44 max-lg:mt-32 max-md:mt-28 pt-36 bg-[#032D6C] relative">
-                <div className="bg-[#E6EDF8] py-10 max-lg:py-7 max-sm:py-5 w-[900px] max-lg:w-[700px] max-md:w-[80%] max-sm:w-[90%] absolute -top-[150px] max-lg:-top-[90px] max-sm:-top-[90px] left-1/2 -translate-x-1/2 flex flex-col items-center justify-center">
-                    <p className="text-[#032D6C] text-4xl max-lg:text-3xl max-sm:text-2xl font-bold">
-                        Join Our Newsletter
-                    </p>
-                    <p className="text-[#344054] mt-3 max-sm:text-sm w-[80%] text-center">
-                        Keep up our latest news and events,Subscribe our
-                        newsletter
-                    </p>
-                    <form
-                        className="flex items-center gap-3 w-[70%] max-sm:w-[90%] mt-5"
-                        action=""
-                    >
-                        <input
-                            type="text"
-                            placeholder="Email Address"
-                            className="border font-medium border-[#032D6C] rounded-md px-5 py-3 max-sm:text-sm max-sm:px-3 max-sm:py-2 bg-[#E6EDF8] w-full"
-                        />
-                        <button className="bg-[#032D6C] text-center text-[#E6EDF8] max-sm:text-sm px-5 py-3 max-sm:px-3 max-sm:py-2 rounded-md">
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
-                <div className="custom_container flex max-xl:flex-col items-start max-xl:items-center justify-center gap-16 max-sm:gap-7 pb-16 max-sm:pb-7">
-                    <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
-                        <Image src="/logo.png" width={190} height={50} alt="" />
-                        <p className="text-white mt-5 leading-6 w-[217px] max-xl:w-[500px] max-sm:w-full max-xl:text-center">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit. Maecenas porttitor congue massa. Fusce
-                            posuere, magna .
-                        </p>
-                        <div className="flex items-center gap-5 mt-6">
-                            <BsWhatsapp size={25} color="white" />
-                            <FiFacebook size={25} color="white" />
-                            <PiTelegramLogo size={25} color="white" />
-                            <BsInstagram size={25} color="white" />
-                        </div>
-                    </div>
-
-                    <div className="flex gap-16 max-sm:gap-5">
-                        <div className="text-white">
-                            <p className="text-[24px] max-sm:text-xl font-bold">
-                                Contact us
-                            </p>
-                            <div className="flex flex-col items-start gap-5 mt-6">
-                                <div className="footer_flex">
-                                    <IoLocationOutline
-                                        size={25}
-                                        color="white"
-                                    />
-                                    Sector 3,Uttara ,Dhaka
-                                </div>
-                                <div className="footer_flex">
-                                    <TfiEmail size={25} color="white" />
-                                    info@school.edu
-                                </div>
-                                <div className="footer_flex">
-                                    <FiPhoneCall size={25} color="white" />
-                                    01712345678
-                                </div>
-                                <div className="footer_flex">
-                                    <FiPhoneCall size={25} color="white" />
-                                    01987654321
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="text-white">
-                            <p className="text-[24px]  max-sm:text-xl font-bold">
-                                Useful links
-                            </p>
-                            <div className="flex flex-col items-start gap-5 mt-6">
-                                <div className="footer_flex">
-                                    <BsArrowRightCircle
-                                        size={25}
-                                        color="white"
-                                    />
-                                    Contact us
-                                </div>
-                                <div className="footer_flex">
-                                    <BsArrowRightCircle
-                                        size={25}
-                                        color="white"
-                                    />
-                                    Academic
-                                </div>
-                                <div className="footer_flex">
-                                    <BsArrowRightCircle
-                                        size={25}
-                                        color="white"
-                                    />
-                                    Admission
-                                </div>
-                                <div className="footer_flex">
-                                    <BsArrowRightCircle
-                                        size={25}
-                                        color="white"
-                                    />
-                                    Job
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="text-white max-xl:w-full">
-                        <p className="text-[24px] max-sm:text-xl font-bold max-xl:text-center">
-                            Find Us On Google Map
-                        </p>
-
-                        <iframe
-                            className={`w-full h-full max-xl:h-[300px] max-sm:h-[200px] mt-6`}
-                            src={`https://yandex.uz/map-widget/v1/`}
-                            loading="lazy"
-                        ></iframe>
-                    </div>
-                </div>
-
-                <hr className="w-full border border-white max-lg:hidden" />
-
-                <p className="text-center text-white py-5 max-sm:py-2 max-sm:text-xs">
-                    copyright@school2023all right reserved
-                </p>
-            </footer>
+            <Footer/>
         </>
     );
 }
