@@ -82,7 +82,7 @@ function Footer() {
                     </button>
                 </form>
             </div>
-            <div className="custom_container flex max-xl:flex-col items-start max-xl:items-center justify-center gap-16 max-sm:gap-7 pb-16 max-sm:pb-7">
+            <div className="custom_container flex max-xl:flex-col items-start max-xl:items-center justify-center gap-16 max-sm:gap-7 pb-16 max-sm:pb-0">
                 <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
                     <Image src="/logo.png" width={190} height={50} alt="" />
                     <p className="text-white mt-5 leading-6 w-[217px] max-xl:w-[500px] max-sm:w-full max-xl:text-center">
@@ -144,13 +144,13 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className="text-white max-xl:w-full">
+                <div className="text-white max-xl:w-full max-sm:flex max-sm:items-center max-sm:flex-col max-sm:justify-center">
                     <p className="text-[24px] max-sm:text-xl font-bold max-xl:text-center">
                         Find Us On Google Map
                     </p>
 
                     <iframe
-                        className={`w-full h-full max-xl:h-[300px] max-sm:h-[200px] mt-6`}
+                        className={`w-full h-full max-xl:h-[400px] max-sm:h-[200px] mt-6`}
                         src={`https://yandex.uz/map-widget/v1/`}
                         loading="lazy"
                     ></iframe>

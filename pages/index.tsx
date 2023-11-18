@@ -21,15 +21,17 @@ export default function Home() {
                     </div>
                     <div className="rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px] flex flex-col items-center pt-[300px] max-xl:pt-[200px] max-md:pt-[150px] max-sm:pt-[120px] relative">
                         <p className="z-10 text-4xl max-xl:text-3xl max-lg:text-2xl max-sm:text-xl text-white">
-                            welcome to School
+                            Maktabga xush kelibsiz
                         </p>
                         <h1 className="z-10 text-7xl  max-xl:text-6xl max-lg:text-5xl max-sm:text-4xl max-[400px]:text-3xl text-white text-center mt-5 max-sm:mt-2">
-                            Education is the best <br /> key to success in life
+                            {/* Education is the best <br /> key to success in life */}
+                            Ta`lim hayotdagi muvaffaqiyatning <br /> eng yaxshi
+                            kalitidir
                         </h1>
-                        <button className="z-10 bg-white flex items-center gap-4 px-[28px] py-[16px] max-lg:px-5 max-lg:py-3 max-sm:px-2 max-sm:py-1 text-[#032D6C] text-[18px] max-sm:text-base max-[400px]:text-sm font-medium rounded-md mt-10  max-sm:mt-10">
+                        {/* <button className="z-10 bg-white flex items-center gap-4 px-[28px] py-[16px] max-lg:px-5 max-lg:py-3 max-sm:px-2 max-sm:py-1 text-[#032D6C] text-[18px] max-sm:text-base max-[400px]:text-sm font-medium rounded-md mt-10  max-sm:mt-10">
                             UPCOMING NOTICE
                             <BiChevronRight size={30} color={"#032D6C"} />
-                        </button>
+                        </button> */}
 
                         <div className="z-10 flex items-center justify-between gap-10 absolute -bottom-[100px] max-lg:hidden">
                             <div className="p-10 max-xl:p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
@@ -100,25 +102,21 @@ export default function Home() {
                         <div className="mt-20 max-lg:mt-10 max-sm:mt-5 flex max-lg:flex-col items-center justify-between gap-20 max-lg:gap-10">
                             <div className="w-full flex items-center justify-center flex-col">
                                 <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-lg:text-4xl max-sm:text-3xl font-bold text-center">
-                                    We are university since 12 years
+                                    Biz 12 yildan beri bilim berib kelyapmiz
                                 </p>
                                 <p className="text-[#032D6C] max-sm:text-sm text-center mt-7 max-sm:mt-5">
-                                    Welcome to xyz, a distinguished institution
-                                    of higher learning committed to academic
-                                    excellence and innovation. With a history
-                                    spanning 12 years, we have consistently
-                                    provided a world-class education, empowering
-                                    our students to succeed in their chosen
-                                    fields. Our dedicated faculty,
-                                    state-of-the-art facilities, and vibrant
-                                    campus community create an environment where
-                                    students can thrive both academically and
-                                    personally.
+                                    Texnikumda o`quv jarayonida darslar o`zbek
+                                    va rus tillarida olib boriladi. O`quv
+                                    xonalari yuqori tezlikdagi internet bilan
+                                    ta`minlangan. Texnikumda na`munaviy o`quv
+                                    rejadagi soatlardan tashqari ingliz va nemis
+                                    tillari tibbiy termilar asosida qo`shimcha
+                                    o`qitiladi.
                                 </p>
-                                <button className="bg-[#032D6C] flex items-center justify-center gap-3 px-10 py-4 max-md:px-7 max-md:py-3 max-sm:px-5 max-sm:py-2 text-[#E6EDF8] rounded-md mt-10 max-sm:mt-5 max-sm:text-sm">
+                                {/* <button className="bg-[#032D6C] flex items-center justify-center gap-3 px-10 py-4 max-md:px-7 max-md:py-3 max-sm:px-5 max-sm:py-2 text-[#E6EDF8] rounded-md mt-10 max-sm:mt-5 max-sm:text-sm">
                                     Learn more
                                     <BiChevronRight size={20} />
-                                </button>
+                                </button> */}
                             </div>
                             <div className="grid grid-cols-3 gap-5 w-[50%] max-lg:w-full">
                                 <div className="bg-[url('/section2/160A2505.JPG')] bg-center bg-cover bg-no-repeat h-[160px] max-lg:h-[300px] max-sm:h-[200px] col-start-1 col-end-4"></div>
@@ -283,11 +281,11 @@ export default function Home() {
                     <p className="text-[#032D6C] text-4xl max-xl:text-3xl font-bold text-center mb-14 max-xl:mb-9">
                         Faculties
                     </p>
-                    <div className="flex max-lg:flex-col items-center gap-10 max-xl:gap-5 max-lg:gap-10 max-sm:gap-5 custom_container">
-                        <div className="w-full max-lg:w-3/4 max-md:w-full bg-white">
-                            <div className="w-full bg-[#E6EDF8] py-3">
+                    <div className="grid grid-cols-4 max-xl:grid-cols-2 max-sm:grid-cols-1 gap-8 max-xl:gap-5 max-sm:gap-5 custom_container">
+                        <div className="w-full max-md:w-full max-sm:w-[90%] max-sm:m-auto bg-white">
+                            <div className="w-full bg-[#E6EDF8] py-3 px-2">
                                 <p className="text-[#032D6C] text-[24px] font-bold text-center">
-                                Feldsher akusherlik ishi
+                                    Feldsher akusherlik ishi
                                 </p>
                             </div>
                             <Image
@@ -295,14 +293,14 @@ export default function Home() {
                                 width={200}
                                 height={200}
                                 alt=""
-                                className="my-5 m-auto"
+                                className="my-5 m-auto max-sm:w-[100px] max-sm:h-[100px]"
                             />
                         </div>
 
-                        <div className="w-full max-lg:w-3/4  max-md:w-full bg-white">
-                            <div className="w-full bg-[#E6EDF8] py-3">
+                        <div className="w-full max-md:w-full max-sm:w-[90%] max-sm:m-auto bg-white">
+                            <div className="w-full bg-[#E6EDF8] py-3 px-2">
                                 <p className="text-[#032D6C] text-[24px] font-bold text-center">
-                                Stomatologiya
+                                    Stomatologiya
                                 </p>
                             </div>
                             <Image
@@ -310,12 +308,12 @@ export default function Home() {
                                 width={200}
                                 height={200}
                                 alt=""
-                                className="my-5 m-auto"
+                                className="my-5 m-auto max-sm:w-[150px] max-sm:h-[150px]"
                             />
                         </div>
 
-                        <div className="w-full max-lg:w-3/4  max-md:w-full bg-white">
-                            <div className="w-full bg-[#E6EDF8] py-3">
+                        <div className="w-full  max-md:w-full max-sm:w-[90%] max-sm:m-auto bg-white">
+                            <div className="w-full bg-[#E6EDF8] py-3 px-2">
                                 <p className="text-[#032D6C] text-[24px] font-bold text-center">
                                     Hamshiralik ishi
                                 </p>
@@ -325,22 +323,22 @@ export default function Home() {
                                 width={200}
                                 height={200}
                                 alt=""
-                                className="my-5 m-auto"
+                                className="my-5 m-auto max-sm:w-[150px] max-sm:h-[150px]"
                             />
                         </div>
 
-                        <div className="w-full max-lg:w-3/4  max-md:w-full bg-white">
-                            <div className="w-full bg-[#E6EDF8] py-3">
+                        <div className="w-full  max-md:w-full max-sm:w-[90%] max-sm:m-auto bg-white">
+                            <div className="w-full bg-[#E6EDF8] py-3 px-2">
                                 <p className="text-[#032D6C] text-[24px] font-bold text-center">
-                                    Hamshiralik ishi
+                                    Farmatsiya
                                 </p>
                             </div>
                             <Image
-                                src={"/section5/section5_3.png"}
+                                src={"/section5/section5_4.png"}
                                 width={200}
                                 height={200}
                                 alt=""
-                                className="my-5 m-auto"
+                                className="my-5 m-auto max-sm:w-[150px] max-sm:h-[150px]"
                             />
                         </div>
                     </div>
@@ -444,52 +442,47 @@ export default function Home() {
                             // onSlideChange={() => console.log("slide change")}
                             // onSwiper={(swiper: any) => console.log(swiper)}
                         >
-                            {[1,2, 3, 4].map(
-                                (item: any, index: any) => (
-                                    <SwiperSlide key={item}>
-                                        <div className="bg-[#F6FAFF]">
-                                            <Image
-                                                src={"/swiper-bottom1.png"}
-                                                width={40}
-                                                height={40}
-                                                alt=""
-                                                className="m-auto"
-                                            />
-
-                                            <p className="mt-5 max-w-[700px] m-auto text-center font-bold text-[#032D6C]">
-                                                ``My university experience has
-                                                been outstanding, thanks to the
-                                                dedicated faculty, diverse
-                                                opportunities, and a supportive
-                                                community. It`s where I`ve grown
-                                                academically and personally,
-                                                making lifelong connections
-                                                along the way.``
-                                            </p>
-
-                                            <Image
-                                                src={`/section6/${item}.jpg`}
-                                                width={150}
-                                                height={150}
-                                                className="m-auto mt-6 rounded-md"
-                                                alt=""
-                                            />
-                                            <p className="font-bold text-[#032D6C] text-center mt-1">
-                                                {item}
-                                            </p>
-                                            <p className=" text-gray-700 text-center mt-1 mb-10">
-                                                {item} Graduate of
-                                                2022,Department of CSE
-                                            </p>{" "}
-                                        </div>
-                                    </SwiperSlide>
-                                )
-                            )}
+                            {[1, 2, 3, 4].map((item: any, index: any) => (
+                                <SwiperSlide key={item}>
+                                    <div className="bg-[#F6FAFF]">
+                                        <Image
+                                            src={"/swiper-bottom1.png"}
+                                            width={40}
+                                            height={40}
+                                            alt=""
+                                            className="m-auto"
+                                        />
+                                        <p className="mt-5 max-w-[700px] m-auto text-center font-bold text-[#032D6C]">
+                                            ``My university experience has been
+                                            outstanding, thanks to the dedicated
+                                            faculty, diverse opportunities, and
+                                            a supportive community. It`s where
+                                            I`ve grown academically and
+                                            personally, making lifelong
+                                            connections along the way.``
+                                        </p>
+                                        <Image
+                                            src={`/section6/${item}.jpg`}
+                                            width={150}
+                                            height={150}
+                                            className="m-auto mt-6 rounded-md"
+                                            alt=""
+                                        />
+                                        <p className="font-bold text-[#032D6C] text-center mt-1">
+                                            {item}
+                                        </p>
+                                        <p className=" text-gray-700 text-center mt-1 mb-10">
+                                            {item} Graduate of 2022,Department
+                                            of CSE
+                                        </p>{" "}
+                                    </div>
+                                </SwiperSlide>
+                            ))}
                         </Swiper>
                     </div>
                 </section>
             </main>
-            <Footer/>
+            <Footer />
         </>
     );
 }
