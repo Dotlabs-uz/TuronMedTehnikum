@@ -42,12 +42,12 @@ export default function Home() {
                                     alt=""
                                     className="max-xl:w-[90px]"
                                 />
-                                <div className="flex items-center text-[#032D6C]">
+                                <div className="flex items-center gap-2 text-[#032D6C]">
                                     <span className="text-4xl max-lg:text-3xl font-bold">
-                                        99+
+                                        18
                                     </span>
                                     <span className="text-3xl max-lg:text-2xl font-semibold">
-                                        Teachers
+                                        O`qituvchi
                                     </span>
                                 </div>
                             </div>
@@ -60,11 +60,8 @@ export default function Home() {
                                     className="max-xl:w-[90px]"
                                 />
                                 <div className="flex items-center text-[#032D6C]">
-                                    <span className="text-4xl  max-lg:text-3xl font-bold">
-                                        12+
-                                    </span>
                                     <span className="text-3xl  max-lg:text-2xl font-semibold">
-                                        Research
+                                        Ingliz va Nemis tillari
                                     </span>
                                 </div>
                             </div>
