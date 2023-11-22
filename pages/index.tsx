@@ -25,8 +25,8 @@ export default function Home() {
                         </p>
                         <h1 className="z-10 text-7xl  max-xl:text-6xl max-lg:text-5xl max-sm:text-4xl max-[400px]:text-3xl text-white text-center mt-5 max-sm:mt-2">
                             {/* Education is the best <br /> key to success in life */}
-                            Ta`lim hayotdagi muvaffaqiyatning <br /> eng yaxshi
-                            kalitidir
+                            Ta&apos;lim hayotdagi muvaffaqiyatning <br /> eng
+                            yaxshi kalitidir
                         </h1>
                         {/* <button className="z-10 bg-white flex items-center gap-4 px-[28px] py-[16px] max-lg:px-5 max-lg:py-3 max-sm:px-2 max-sm:py-1 text-[#032D6C] text-[18px] max-sm:text-base max-[400px]:text-sm font-medium rounded-md mt-10  max-sm:mt-10">
                             UPCOMING NOTICE
@@ -60,8 +60,8 @@ export default function Home() {
                                     className="max-xl:w-[90px]"
                                 />
                                 <div className="flex items-center text-[#032D6C]">
-                                    <span className="text-3xl  max-lg:text-2xl font-semibold">
-                                        Ingliz va Nemis tillari
+                                    <span className="text-3xl  max-lg:text-2xl font-semibold text-center">
+                                        Ingliz va Nemis <br /> tillari
                                     </span>
                                 </div>
                             </div>
@@ -74,11 +74,8 @@ export default function Home() {
                                     className="max-xl:w-[90px]"
                                 />
                                 <div className="flex items-center text-[#032D6C]">
-                                    <span className="text-4xl  max-lg:text-3xl font-bold">
-                                        15+
-                                    </span>
-                                    <span className="text-3xl max-lg:text-2xl font-semibold">
-                                        Departments
+                                    <span className="text-3xl max-lg:text-2xl font-semibold text-center">
+                                        Germaniyada ishlash <br /> inkoniyati
                                     </span>
                                 </div>
                             </div>
@@ -98,10 +95,10 @@ export default function Home() {
                         </div>
                         <div className="mt-20 max-lg:mt-10 max-sm:mt-5 flex max-lg:flex-col items-center justify-between gap-20 max-lg:gap-10">
                             <div className="w-full flex items-center justify-center flex-col">
-                                <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-lg:text-4xl max-sm:text-3xl font-bold text-center">
+                                <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-lg:text-4xl max-sm:text-3xl font-bold text-center max-w-[400px]">
                                     Biz 12 yildan beri bilim berib kelyapmiz
                                 </p>
-                                <p className="text-[#032D6C] max-sm:text-sm text-center mt-7 max-sm:mt-5">
+                                <p className="text-[#032D6C] max-sm:text-sm text-center mt-7 max-sm:mt-5  max-w-[600px]">
                                     Texnikumda o`quv jarayonida darslar o`zbek
                                     va rus tillarida olib boriladi. O`quv
                                     xonalari yuqori tezlikdagi internet bilan
@@ -128,7 +125,7 @@ export default function Home() {
 
                 <section className="section_3">
                     <p className="text-[#032D6C] text-center text-4xl max-xl:text-3xl font-bold mb-20 max-xl:mb-10 max-sm:mb-8">
-                        Upcoming Events
+                        Yo&apos;nalishlar
                     </p>
 
                     <div className="custom_container max-lg:hidden">
@@ -261,22 +258,25 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <button className="mt-10 max-sm:mt-8 m-auto bg-[#032D6C] flex items-center justify-center gap-3 px-10 py-4 max-sm:px-7 max-sm:py-3 max-sm:text-sm text-[#E6EDF8] rounded-md">
+                    {/* <button className="mt-10 max-sm:mt-8 m-auto bg-[#032D6C] flex items-center justify-center gap-3 px-10 py-4 max-sm:px-7 max-sm:py-3 max-sm:text-sm text-[#E6EDF8] rounded-md">
                         Explore all events
                         <BiChevronRight size={20} />
-                    </button>
+                    </button> */}
                 </section>
 
                 <section className="section_4 mt-14 max-lg:mt-10">
                     <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-[400px]:text-3xl font-bold text-center">
-                        University Video Tour
+                        KUCH - BILIM VA TAFAKURDA
                     </p>
-                    <div className="mt-20 max-xl:mt-16 max-lg:mt-10 h-[700px] max-xl:h-[550xp] max-lg:h-[450px] max-md:h-[350px] max-sm:h-[250px] max-[400px]:h-[200px] bg-[url('/images/33.JPG')] bg-cover bg-no-repeat bg-center"></div>
+                    <div className="mt-20 max-xl:mt-16 max-lg:mt-10 h-[700px] max-xl:h-[550xp] max-lg:h-[450px] max-md:h-[350px] max-sm:h-[250px] max-[400px]:h-[200px] bg-[url('/images/33.JPG')] bg-cover bg-no-repeat bg-center relative">
+                    <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
+
+                    </div>
                 </section>
 
                 <section className="section_5 mt-20 max-xl:mt-10">
                     <p className="text-[#032D6C] text-4xl max-xl:text-3xl font-bold text-center mb-14 max-xl:mb-9">
-                        Faculties
+                        Yo&apos;nalishlar
                     </p>
                     <div className="grid grid-cols-4 max-xl:grid-cols-2 max-sm:grid-cols-1 gap-8 max-xl:gap-5 max-sm:gap-5 custom_container">
                         <div className="w-full max-md:w-full max-sm:w-[90%] max-sm:m-auto bg-white">
@@ -343,7 +343,7 @@ export default function Home() {
 
                 <section className="section_6 mt-20 max-xl:mt-10">
                     <p className="text-[#032D6C] text-4xl max-xl:text-3xl font-bold text-center mb-14 max-xl:mb-7">
-                        Our Expert Teachers
+                        Bizning Mutaxassis O&apos;qituvchilarimiz
                     </p>
                     <div className="flex items-center justify-center gap-10 max-lg:gap-5 max-sm:gap-4 max-[400px]:gap-2 max-lg:flex-wrap m-auto custom_container">
                         <Image
@@ -375,10 +375,10 @@ export default function Home() {
                             className="max-sm:w-[140px] max-sm:h-[200px]"
                         />
                     </div>
-                    <button className="mt-10 max-sm:mt-5 m-auto bg-[#032D6C] flex items-center justify-center gap-3 px-10 py-4 max-sm:px-5 max-sm:py-2 text-[#E6EDF8] rounded-md">
+                    {/* <button className="mt-10 max-sm:mt-5 m-auto bg-[#032D6C] flex items-center justify-center gap-3 px-10 py-4 max-sm:px-5 max-sm:py-2 text-[#E6EDF8] rounded-md">
                         See more
                         <BiChevronRight size={25} />
-                    </button>
+                    </button> */}
                 </section>
 
                 <section className="section_7 mt-20 max-xl:mt-10">
@@ -394,7 +394,7 @@ export default function Home() {
                             unique story of our vibrant and dynamic community.
                         </p>
 
-                        <div className="flex items-center gap-5 max-md:gap-2 w-fit m-auto mt-10 max-lg:mt-5 max-md:flex-wrap justify-center">
+                        {/* <div className="flex items-center gap-5 max-md:gap-2 w-fit m-auto mt-10 max-lg:mt-5 max-md:flex-wrap justify-center">
                             <div className="px-5 py-2 max-sm:py-1 max-sm:px-3 bg-[#032D6C] text-[#E6EDF8] flex items-center justify-center rounded-md border border-[#032D6C]">
                                 All
                             </div>
@@ -402,17 +402,39 @@ export default function Home() {
                             <div className="not_active">Annual Program</div>
                             <div className="not_active">Awards</div>
                             <div className="not_active">Curiculum</div>
-                        </div>
+                        </div> */}
 
                         <div className="mt-10 max-md:mt-5 grid grid-cols-4 auto-rows-[250px] max-xl:auto-rows-[160px] max-lg:auto-rows-[140px] max-md:auto-rows-[100px] max-sm:auto-rows-[70px]  max-[400px]:auto-rows-[60px] gap-5 max-md:gap-2">
-                            <div className="bg-[url('/images/1.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-1 row-end-3"></div>
-                            <div className="bg-[url('/images/2.JPG')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-1 row-end-2"></div>
-                            <div className="bg-[url('/images/3.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-1 row-end-2"></div>
-                            <div className="bg-[url('/images/4.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-3 row-end-5"></div>
-                            <div className="bg-[url('/images/32.JPG')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-2 row-end-5"></div>
-                            <div className="bg-[url('/images/9.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-2 row-end-4"></div>
-                            <div className="bg-[url('/images/18.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-4 row-start-5 row-end-6"></div>
-                            <div className="bg-[url('/images/25.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-4 row-end-6"></div>
+                            <div className="bg-[url('/images/1.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-1 row-end-3 relative">
+                                <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
+                            </div>
+                            <div className="bg-[url('/images/2.JPG')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-1 row-end-2 relative">
+                                <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
+                            </div>
+                            <div className="bg-[url('/images/3.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-1 row-end-2 relative">
+                            <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
+
+                            </div>
+                            <div className="bg-[url('/images/4.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-3 row-end-5 relative">
+                            <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
+
+                            </div>
+                            <div className="bg-[url('/images/32.JPG')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-2 row-end-5 relative">
+                            <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
+
+                            </div>
+                            <div className="bg-[url('/images/9.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-2 row-end-4 relative">
+                            <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
+
+                            </div>
+                            <div className="bg-[url('/images/18.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-4 row-start-5 row-end-6 relative">
+                                <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
+
+                            </div>
+                            <div className="bg-[url('/images/25.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-4 row-end-6 relative">
+                                <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
+
+                            </div>
                         </div>
                     </div>
                 </section>
