@@ -7,7 +7,20 @@ import { IoClose } from "react-icons/io5";
 import { Select } from "antd";
 import { useRouter } from "next/router";
 
-function Header() {
+export const scrollToContent = (e: any, contentId: any) => {
+    e.preventDefault();
+
+    const content = document.getElementById(contentId);
+    if (content) {
+        content.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest",
+        });
+    }
+};
+
+function Header({ translation }: any) {
     const [modalHandler, setModalHandler] = useState(false);
     const router = useRouter();
     const { locale } = router;
@@ -26,30 +39,41 @@ function Header() {
     return (
         <header className="w-full absolute top-0 left-0 bg-[#F6FAFF] z-50">
             <div className="w-[80%] max-md:w-[95%] p-3 m-auto flex items-center justify-between gap-5">
-                <Image
-                    src="/logo.png"
-                    width={100}
-                    height={20}
-                    alt=""
-                    className="max-lg:w-[90px] max-sm:w-[50px]"
-                />
+                <Link href="/">
+                    <Image
+                        src="/logo.png"
+                        width={100}
+                        height={20}
+                        alt=""
+                        className="max-lg:w-[90px] max-sm:w-[50px]"
+                    />
+                </Link>
 
                 <div className="flex items-center gap-5 max-lg:hidden">
                     <ul className="flex items-center gap-5 text-[#032D6C]">
                         <li>
-                            <Link href={"#"}>About</Link>
+                            <a onClick={(e) => scrollToContent(e, "about")}>
+                                {translation.aboutUs}
+                            </a>
                         </li>
                         <li>
-                            <Link href={"#"}>Academics</Link>
+                            <a onClick={(e) => scrollToContent(e, "direction")}>
+                                {translation.directions}
+                            </a>
                         </li>
                         <li>
-                            <Link href={"#"}>Admission</Link>
+                            <a onClick={(e) => scrollToContent(e, "teachers")}>
+                                {translation.teachers}
+                            </a>
                         </li>
                         <li>
-                            <Link href={"#"}>Research</Link>
-                        </li>
-                        <li>
-                            <Link href={"#"}>Job</Link>
+                            <a
+                                onClick={(e) =>
+                                    scrollToContent(e, "infrastructure")
+                                }
+                            >
+                                {translation.infrastructure}
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -96,27 +120,29 @@ function Header() {
                                     </span>
                                 ),
                             },
-                            {
-                                value: "tjk",
-                                label: (
-                                    <span className="flex items-center gap-1">
-                                        <Image
-                                            width={100}
-                                            height={100}
-                                            src="/images/eng_flag.webp"
-                                            alt="eng"
-                                            className="w-[20px] h-[20px] rounded-full"
-                                        />
-                                        {"TJK"}
-                                    </span>
-                                ),
-                            },
+                            // {
+                            //     value: "tjk",
+                            //     label: (
+                            //         <span className="flex items-center gap-1">
+                            //             <Image
+                            //                 width={100}
+                            //                 height={100}
+                            //                 src="/images/tjk.png"
+                            //                 alt="eng"
+                            //                 className="w-[20px] h-[20px] rounded-full"
+                            //             />
+                            //             {"TJK"}
+                            //         </span>
+                            //     ),
+                            // },
                         ]}
                     />
-                    <button className="max-lg:hidden bg-[#032D6C] flex items-center gap-4 px-[28px] py-[10px] text-white text-[18px] font-medium rounded-full">
-                        Contact us
-                        <BiChevronRight size={25} />
-                    </button>
+                    <a
+                        onClick={(e) => scrollToContent(e, "footer")}
+                        className="max-lg:hidden bg-[#032D6C] flex items-center px-[28px] py-[10px] text-white text-[18px] font-medium rounded-full cursor-pointer"
+                    >
+                        {translation.consult}
+                    </a>
 
                     <GiHamburgerMenu
                         size={30}
@@ -146,25 +172,21 @@ function Header() {
 
                     <ul className="flex flex-col items-center gap-5 mt-20 text-[#032D6C] font-bold text-2xl">
                         <li>
-                            <Link href={"#"}>About</Link>
+                            <a onClick={(e) => {scrollToContent(e, "about"), setModalHandler(false)}}>{translation.aboutUs}</a>
                         </li>
                         <li>
-                            <Link href={"#"}>Academics</Link>
+                            <a onClick={(e) => {scrollToContent(e, "direction"), setModalHandler(false)}}>{translation.directions}</a>
                         </li>
                         <li>
-                            <Link href={"#"}>Admission</Link>
+                            <a onClick={(e) => {scrollToContent(e, "teachers"), setModalHandler(false)}}>{translation.teachers}</a>
                         </li>
                         <li>
-                            <Link href={"#"}>Research</Link>
-                        </li>
-                        <li>
-                            <Link href={"#"}>Job</Link>
+                            <a onClick={(e) => {scrollToContent(e, "infrastructure"), setModalHandler(false)}}>{translation.infrastructure}</a>
                         </li>
                     </ul>
-                    <button className="mt-5 bg-[#032D6C] flex items-center gap-4 px-[28px] py-[10px] text-white text-[18px] font-medium rounded-full m-auto">
-                        Contact us
-                        <BiChevronRight size={25} />
-                    </button>
+                    <a onClick={(e) => {scrollToContent(e, "footer"), setModalHandler(false)}} className="mt-5 bg-[#032D6C] px-[28px] py-[10px] text-white text-[18px] font-medium rounded-full block w-fit m-auto">
+                        {translation.consult}
+                    </a>
                 </div>
             ) : null}
         </header>

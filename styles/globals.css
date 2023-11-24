@@ -17,6 +17,10 @@ main {
     font-family: var(--body-font);
 }
 
+a{
+    cursor: pointer;
+}
+
 .custom_container{
     @apply w-[75%] m-auto max-lg:w-[85%] max-sm:w-[90%]
 }
