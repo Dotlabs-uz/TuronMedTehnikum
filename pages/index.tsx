@@ -84,6 +84,55 @@ export default function Home() {
                     </div>
                 </section>
 
+                <section className="hidden max-lg:block mt-20">
+                    <div className="w-[90%] z-10 grid grid-cols-1 gap-10 m-auto">
+                        <div className="w-[70%] max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
+                            <Image
+                                src={"/section1/section1_bottom1.png"}
+                                width={114}
+                                height={120}
+                                alt=""
+                                className="w-[90px]"
+                            />
+                            <div className="flex items-center gap-2 text-[#032D6C]">
+                                <span className="text-3xl font-bold">
+                                    18
+                                </span>
+                                <span className="text-3xl max-lg:text-2xl font-semibold">
+                                    {translation.section1.bottomBlock.first}
+                                </span>
+                            </div>
+                        </div>
+                        <div className="w-[70%] max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
+                            <Image
+                                src={"/section1/section1_bottom2.png"}
+                                width={114}
+                                height={120}
+                                alt=""
+                                className="w-[90px]"
+                            />
+                            <div className="flex items-center text-[#032D6C]">
+                                <span className="text-2xl font-semibold text-center">
+                                    {translation.section1.bottomBlock.secant}
+                                </span>
+                            </div>
+                        </div>
+                        <div className="w-[70%] max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
+                            <Image
+                                src={"/section1/section1_bottom3.png"}
+                                width={114}
+                                height={120}
+                                alt=""
+                                className="w-[90px]"
+                            />
+                            <div className="flex items-center text-[#032D6C]">
+                                <p className="text-2xl font-semibold text-center">
+                                    {translation.section1.bottomBlock.third}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section id="about" className="mt-40 max-lg:mt-0 section_2">
                     <div className="custom_container">
                         <div className="flex items-center justify-end max-lg:hidden">
@@ -102,15 +151,10 @@ export default function Home() {
                                 <p className="text-[#032D6C] max-sm:text-sm text-center mt-7 max-sm:mt-5  max-w-[600px]">
                                     {translation.section2.text}
                                 </p>
-                                {/* <button className="bg-[#032D6C] flex items-center justify-center gap-3 px-10 py-4 max-md:px-7 max-md:py-3 max-sm:px-5 max-sm:py-2 text-[#E6EDF8] rounded-md mt-10 max-sm:mt-5 max-sm:text-sm">
-                                    Learn more
-                                    <BiChevronRight size={20} />
-                                </button> */}
                             </div>
                             <div className="grid grid-cols-3 gap-5 w-[50%] max-lg:w-full">
-                                <div className="bg-[url('/section2/160A2505.JPG')] bg-center bg-cover bg-no-repeat h-[160px] max-lg:h-[300px] max-sm:h-[200px] col-start-1 col-end-4"></div>
-                                <div className="bg-[url('/section2/160A2504.JPG')] bg-center bg-cover bg-no-repeat h-[200px] max-lg:h-[300px] max-sm:h-[210px] row-start-2 row-end-3 col-start-1 col-end-4"></div>
-                                {/* <div className="bg-[yellow] h-[200px] max-lg:h-[300px] max-sm:h-[210px] row-start-2 row-end-3 col-start-3 col-end-4"></div> */}
+                                <div className="bg-[url('/section2/160A2505.jpg')] bg-center bg-cover bg-no-repeat h-[160px] max-lg:h-[300px] max-sm:h-[200px] col-start-1 col-end-4"></div>
+                                <div className="bg-[url('/section2/160A2504.jpg')] bg-center bg-cover bg-no-repeat h-[200px] max-lg:h-[300px] max-sm:h-[210px] row-start-2 row-end-3 col-start-1 col-end-4"></div>
                             </div>
                         </div>
                     </div>
@@ -193,7 +237,7 @@ export default function Home() {
                     <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-[400px]:text-3xl font-bold text-center">
                         {translation.section4.title}
                     </p>
-                    <div className="mt-20 max-xl:mt-16 max-lg:mt-10 h-[700px] max-xl:h-[550xp] max-lg:h-[450px] max-md:h-[350px] max-sm:h-[250px] max-[400px]:h-[200px] bg-[url('/images/33.JPG')] bg-cover bg-no-repeat bg-center relative">
+                    <div className="mt-20 max-xl:mt-16 max-lg:mt-10 h-[700px] max-xl:h-[550xp] max-lg:h-[450px] max-md:h-[350px] max-sm:h-[250px] max-[400px]:h-[200px] bg-[url('/images/33.webp')] bg-cover bg-no-repeat bg-center relative">
                         <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
                     </div>
                 </section>
@@ -299,10 +343,6 @@ export default function Home() {
                             className="max-sm:w-[140px] max-sm:h-[200px]"
                         />
                     </div>
-                    {/* <button className="mt-10 max-sm:mt-5 m-auto bg-[#032D6C] flex items-center justify-center gap-3 px-10 py-4 max-sm:px-5 max-sm:py-2 text-[#E6EDF8] rounded-md">
-                        See more
-                        <BiChevronRight size={25} />
-                    </button> */}
                 </section>
 
                 <section
@@ -311,36 +351,35 @@ export default function Home() {
                 >
                     <div className="custom_container">
                         <p className="text-[#032D6C] text-4xl max-xl:text-3xl font-bold text-center">
-                        {translation.section7.title}
+                            {translation.section7.title}
                         </p>
                         <p className="mt-10 max-md:mt-5 text-[#032D6C] text-center">
-                        {translation.section7.text}
-
+                            {translation.section7.text}
                         </p>
 
                         <div className="my-10 max-md:my-5 grid grid-cols-4 auto-rows-[250px] max-xl:auto-rows-[160px] max-lg:auto-rows-[140px] max-md:auto-rows-[100px] max-sm:auto-rows-[70px]  max-[400px]:auto-rows-[60px] gap-5 max-md:gap-2">
-                            <div className="bg-[url('/images/1.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-1 row-end-3 relative">
+                            <div className="bg-[url('/images/1.webp')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-1 row-end-3 relative">
                                 <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
                             </div>
-                            <div className="bg-[url('/images/2.JPG')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-1 row-end-2 relative">
+                            <div className="bg-[url('/images/2.webp')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-1 row-end-2 relative">
                                 <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
                             </div>
-                            <div className="bg-[url('/images/3.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-1 row-end-2 relative">
+                            <div className="bg-[url('/images/3.webp')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-1 row-end-2 relative">
                                 <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
                             </div>
-                            <div className="bg-[url('/images/4.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-3 row-end-5 relative">
+                            <div className="bg-[url('/images/4.webp')] bg-center bg-cover bg-no-repeat col-start-1 col-end-2 row-start-3 row-end-5 relative">
                                 <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
                             </div>
-                            <div className="bg-[url('/images/32.JPG')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-2 row-end-5 relative">
+                            <div className="bg-[url('/images/32.webp')] bg-center bg-cover bg-no-repeat col-start-2 col-end-4 row-start-2 row-end-5 relative">
                                 <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
                             </div>
-                            <div className="bg-[url('/images/9.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-2 row-end-4 relative">
+                            <div className="bg-[url('/images/9.webp')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-2 row-end-4 relative">
                                 <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
                             </div>
-                            <div className="bg-[url('/images/18.JPG')] bg-center bg-cover bg-no-repeat col-start-1 col-end-4 row-start-5 row-end-6 relative">
+                            <div className="bg-[url('/images/18.webp')] bg-center bg-cover bg-no-repeat col-start-1 col-end-4 row-start-5 row-end-6 relative">
                                 <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
                             </div>
-                            <div className="bg-[url('/images/25.JPG')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-4 row-end-6 relative">
+                            <div className="bg-[url('/images/25.webp')] bg-center bg-cover bg-no-repeat col-start-4 col-end-5 row-start-4 row-end-6 relative">
                                 <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
                             </div>
                         </div>
@@ -409,7 +448,7 @@ export default function Home() {
                     </div>
                 </section> */}
             </main>
-            <Footer translation={translation.footer}/>
+            <Footer translation={translation.footer} />
         </>
     );
 }
