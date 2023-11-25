@@ -84,8 +84,8 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="hidden max-lg:block mt-20">
-                    <div className="w-[90%] z-10 grid grid-cols-1 gap-10 m-auto">
+                <section className="hidden max-lg:block mt-20 max-sm:mt-8">
+                    <div className="w-[90%] z-10 grid grid-cols-1 gap-10 max-sm:gap-5 m-auto">
                         <div className="w-[70%] max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
                             <Image
                                 src={"/section1/section1_bottom1.png"}
