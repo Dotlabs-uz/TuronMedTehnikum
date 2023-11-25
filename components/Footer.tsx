@@ -52,10 +52,10 @@ function Footer({translation}:any) {
         <footer id="footer" className="mt-44 max-lg:mt-32 max-md:mt-28 pt-36 bg-[#032D6C] relative">
             <div className="bg-[#E6EDF8] py-10 max-lg:py-7 max-sm:py-5 w-[900px] max-lg:w-[700px] max-md:w-[80%] max-sm:w-[90%] absolute -top-[150px] max-lg:-top-[90px] max-sm:-top-[90px] left-1/2 -translate-x-1/2 flex flex-col items-center justify-center">
                 <p className="text-[#032D6C] text-4xl max-lg:text-3xl max-sm:text-2xl font-bold">
-                    {translation.form.title}
+                    {translation?.form?.title}
                 </p>
                 <p className="text-[#344054] mt-3 max-sm:text-sm w-[80%] text-center">
-                    {translation.form.text}
+                    {translation?.form?.text}
                 </p>
                 <form
                     onSubmit={handleSubmit(onSubmit)}
