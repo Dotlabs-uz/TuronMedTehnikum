@@ -84,7 +84,7 @@ export default function Home() {
 
                 <section className="hidden max-lg:block mt-20 max-sm:mt-8">
                     <div className="w-[90%] z-10 grid grid-cols-1 gap-10 max-sm:gap-5 m-auto">
-                        <div className="w-[70%] max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
+                        <div className="w-[70%] shadow-lg max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
                             <Image
                                 src={"/section1/section1_bottom1.png"}
                                 width={114}
@@ -99,7 +99,7 @@ export default function Home() {
                                 </span>
                             </div>
                         </div>
-                        <div className="w-[70%] max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
+                        <div className="w-[70%] shadow-lg max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
                             <Image
                                 src={"/section1/section1_bottom2.png"}
                                 width={114}
@@ -113,7 +113,7 @@ export default function Home() {
                                 </span>
                             </div>
                         </div>
-                        <div className="w-[70%] max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
+                        <div className="w-[70%] shadow-lg max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
                             <Image
                                 src={"/section1/section1_bottom3.png"}
                                 width={114}
