@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaPlay } from "react-icons/fa";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -379,68 +378,6 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-
-                {/* <section className="section_8 mt-20  max-xl:mt-10 max-sm:mt-5">
-                    <div className="custom_container">
-                        <p className="text-[#032D6C] text-4xl max-xl:text-3xl font-bold text-center mb-14 max-lg:mb-7">
-                            Student Voices
-                        </p>
-                        <Swiper
-                            spaceBetween={50}
-                            slidesPerView={1}
-                            centeredSlides={true}
-                            loop={true}
-                            effect={"fade"}
-                            autoplay={{
-                                delay: 1500,
-                                disableOnInteraction: true,
-                            }}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            modules={[EffectFade, Autoplay, Pagination]}
-                            // onSlideChange={() => console.log("slide change")}
-                            // onSwiper={(swiper: any) => console.log(swiper)}
-                        >
-                            {[1, 2, 3, 4].map((item: any, index: any) => (
-                                <SwiperSlide key={item}>
-                                    <div className="bg-[#F6FAFF]">
-                                        <Image
-                                            src={"/swiper-bottom1.png"}
-                                            width={40}
-                                            height={40}
-                                            alt=""
-                                            className="m-auto"
-                                        />
-                                        <p className="mt-5 max-w-[700px] m-auto text-center font-bold text-[#032D6C]">
-                                            ``My university experience has been
-                                            outstanding, thanks to the dedicated
-                                            faculty, diverse opportunities, and
-                                            a supportive community. It`s where
-                                            I`ve grown academically and
-                                            personally, making lifelong
-                                            connections along the way.``
-                                        </p>
-                                        <Image
-                                            src={`/section6/${item}.jpg`}
-                                            width={150}
-                                            height={150}
-                                            className="m-auto mt-6 rounded-md"
-                                            alt=""
-                                        />
-                                        <p className="font-bold text-[#032D6C] text-center mt-1">
-                                            {item}
-                                        </p>
-                                        <p className=" text-gray-700 text-center mt-1 mb-10">
-                                            {item} Graduate of 2022,Department
-                                            of CSE
-                                        </p>{" "}
-                                    </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </div>
-                </section> */}
             </main>
             <Footer translation={translation.footer} />
         </>
