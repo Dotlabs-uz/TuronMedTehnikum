@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Header, { scrollToContent } from "@/components/Header";
+import Header from "@/components/Header";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, EffectFade } from "swiper/modules";
-import { BiChevronRight } from "react-icons/bi";
+import { FaPlay } from "react-icons/fa";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -95,9 +94,7 @@ export default function Home() {
                                 className="w-[90px]"
                             />
                             <div className="flex items-center gap-2 text-[#032D6C]">
-                                <span className="text-3xl font-bold">
-                                    18
-                                </span>
+                                <span className="text-3xl font-bold">18</span>
                                 <span className="text-3xl max-lg:text-2xl font-semibold">
                                     {translation.section1.bottomBlock.first}
                                 </span>
@@ -168,10 +165,7 @@ export default function Home() {
                     </p>
 
                     <div className="custom_container max-lg:hidden">
-                        <Swiper
-                            spaceBetween={50}
-                            slidesPerView={3}
-                        >
+                        <Swiper spaceBetween={50} slidesPerView={3}>
                             {translation.section3.directions.map(
                                 (item: any) => (
                                     <SwiperSlide
@@ -235,8 +229,10 @@ export default function Home() {
                     <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-[400px]:text-3xl font-bold text-center">
                         {translation.section4.title}
                     </p>
-                    <div className="mt-20 max-xl:mt-16 max-lg:mt-10 h-[700px] max-xl:h-[550xp] max-lg:h-[450px] max-md:h-[350px] max-sm:h-[250px] max-[400px]:h-[200px] bg-[url('/images/33.webp')] bg-cover bg-no-repeat bg-center relative">
-                        <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full"></div>
+                    <div className="mt-20 max-xl:mt-16 max-lg:mt-10 h-[700px] max-xl:h-[550xp] max-lg:h-[450px] max-md:h-[350px] max-sm:h-[250px] max-[400px]:h-[200px] bg-cover bg-no-repeat bg-center relative">
+                        {/* <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full flex items-center justify-center"> */}
+                        <iframe className="w-[80%] h-full m-auto" src="https://www.youtube.com/embed/XT1VYTJVKto?si=z-KwgHu_PlRBIGZB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        {/* </div> */}
                     </div>
                 </section>
 
