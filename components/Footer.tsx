@@ -9,6 +9,7 @@ import Image from "next/image";
 import { useForm, SubmitHandler } from "react-hook-form";
 import axios from "axios";
 import { scrollToContent } from "./Header";
+import Link from "next/link";
 
 type Inputs = {
     number: string;
@@ -91,10 +92,14 @@ function Footer({ translation }: any) {
                 <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
                     <Image src="/logo.png" width={190} height={50} alt="" />
                     <div className="flex items-center gap-5 mt-6">
-                        <BsWhatsapp size={25} color="white" />
-                        <FiFacebook size={25} color="white" />
+                        {/* <BsWhatsapp size={25} color="white" /> */}
+                        <Link href="https://www.facebook.com/profile.php?id=100026747054522">
+                            <FiFacebook size={25} color="white" />
+                        </Link>
                         <PiTelegramLogo size={25} color="white" />
-                        <BsInstagram size={25} color="white" />
+                        <Link href="https://www.instagram.com/nematkuchkarov">
+                            <BsInstagram size={25} color="white" />
+                        </Link>
                     </div>
                 </div>
 
