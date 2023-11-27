@@ -20,7 +20,7 @@ export default function Home() {
             <main className="overflow-hidden relative">
                 <section className="section_1">
                     <div className="w-[160%] max-[450px]:w-[190%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2  rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px]">
-                        <div className="bg-[url('/section1.jpg')] bg-center bg-no-repeat bg-cover w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
+                        <div className="bg-[url('/section1.webp')] bg-center bg-no-repeat bg-cover w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
                         <div className="bg-[#0000ff52] w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
                     </div>
                     <div className="rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px] flex flex-col items-center pt-[300px] max-xl:pt-[200px] max-md:pt-[150px] max-sm:pt-[120px] relative">
@@ -153,8 +153,8 @@ export default function Home() {
                                 </p>
                             </div>
                             <div className="grid grid-cols-3 gap-5 w-[50%] max-lg:w-full">
-                                <div className="bg-[url('/section2/160A2505.jpg')] bg-center bg-cover bg-no-repeat h-[160px] max-lg:h-[300px] max-sm:h-[200px] col-start-1 col-end-4"></div>
-                                <div className="bg-[url('/section2/160A2504.jpg')] bg-center bg-cover bg-no-repeat h-[200px] max-lg:h-[300px] max-sm:h-[210px] row-start-2 row-end-3 col-start-1 col-end-4"></div>
+                                <div className="bg-[url('/section2/8.webp')] bg-center bg-cover bg-no-repeat h-[160px] max-lg:h-[300px] max-sm:h-[200px] col-start-1 col-end-4"></div>
+                                <div className="bg-[url('/section2/7.webp')] bg-center bg-cover bg-no-repeat h-[200px] max-lg:h-[300px] max-sm:h-[210px] row-start-2 row-end-3 col-start-1 col-end-4"></div>
                             </div>
                         </div>
                     </div>
@@ -171,8 +171,6 @@ export default function Home() {
                         <Swiper
                             spaceBetween={50}
                             slidesPerView={3}
-                            onSlideChange={() => console.log("slide change")}
-                            onSwiper={(swiper: any) => console.log(swiper)}
                         >
                             {translation.section3.directions.map(
                                 (item: any) => (
@@ -213,8 +211,8 @@ export default function Home() {
                             >
                                 <Image
                                     src={item.img}
-                                    width={200}
-                                    height={100}
+                                    width={300}
+                                    height={200}
                                     alt=""
                                     className="w-full rounded"
                                 />

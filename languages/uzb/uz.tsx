@@ -77,7 +77,7 @@ const uz = {
         },
         contact: {
             title: "Kontaklat",
-            location: "Sector 3,Uttara ,Dhaka",
+            location: "Zebiniso ko'chasi",
         },
         links: {
             title: "Havolalar",

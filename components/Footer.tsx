@@ -17,7 +17,7 @@ type Inputs = {
 
 const URL = `https://api.telegram.org/bot6879318097:AAEupFfkcyiTn3Og-ymTEr_LGh8ZeC3Rru0/sendMessage`;
 
-function Footer({translation}:any) {
+function Footer({ translation }: any) {
     const [number, setNumber] = useState("");
 
     const {
@@ -49,7 +49,10 @@ function Footer({translation}:any) {
     };
 
     return (
-        <footer id="footer" className="mt-44 max-lg:mt-32 max-md:mt-28 pt-36 bg-[#032D6C] relative">
+        <footer
+            id="footer"
+            className="mt-44 max-lg:mt-32 max-md:mt-28 pt-36 bg-[#032D6C] relative"
+        >
             <div className="bg-[#E6EDF8] py-10 max-lg:py-7 max-sm:py-5 w-[900px] max-lg:w-[700px] max-md:w-[80%] max-sm:w-[90%] absolute -top-[150px] max-lg:-top-[90px] max-sm:-top-[90px] left-1/2 -translate-x-1/2 flex flex-col items-center justify-center">
                 <p className="text-[#032D6C] text-4xl max-lg:text-3xl max-sm:text-2xl font-bold">
                     {translation?.form?.title}
@@ -98,7 +101,7 @@ function Footer({translation}:any) {
                 <div className="flex max-sm:flex-col gap-16 max-sm:gap-5">
                     <div className="text-white">
                         <p className="text-[24px] max-sm:text-xl max-sm:text-center font-bold">
-                        {translation.contact.title}
+                            {translation.contact.title}
                         </p>
                         <div className="flex flex-col items-start gap-5 mt-6">
                             <div className="footer_flex">
@@ -111,7 +114,9 @@ function Footer({translation}:any) {
                             </div>
                             <div className="footer_flex">
                                 <FiPhoneCall size={25} color="white" />
-                                <a href="tel:+998990381200">+998(99) 038-12-00</a>
+                                <a href="tel:+998990381200">
+                                    +998(99) 038-12-00
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -121,19 +126,33 @@ function Footer({translation}:any) {
                             {translation.links.title}
                         </p>
                         <div className="flex flex-col items-start gap-5 mt-6">
-                            <a onClick={(e)=> scrollToContent(e, "about")} className="footer_flex">
+                            <a
+                                onClick={(e) => scrollToContent(e, "about")}
+                                className="footer_flex"
+                            >
                                 <BsArrowRightCircle size={25} color="white" />
                                 {translation.links.aboutUs}
                             </a>
-                            <a onClick={(e)=> scrollToContent(e, "direction")} className="footer_flex">
+                            <a
+                                onClick={(e) => scrollToContent(e, "direction")}
+                                className="footer_flex"
+                            >
                                 <BsArrowRightCircle size={25} color="white" />
                                 {translation.links.directions}
                             </a>
-                            <a onClick={(e)=> scrollToContent(e, "teachers")} className="footer_flex">
+                            <a
+                                onClick={(e) => scrollToContent(e, "teachers")}
+                                className="footer_flex"
+                            >
                                 <BsArrowRightCircle size={25} color="white" />
                                 {translation.links.teachers}
                             </a>
-                            <a onClick={(e)=> scrollToContent(e, "infrastructure")} className="footer_flex">
+                            <a
+                                onClick={(e) =>
+                                    scrollToContent(e, "infrastructure")
+                                }
+                                className="footer_flex"
+                            >
                                 <BsArrowRightCircle size={25} color="white" />
                                 {translation.links.infrastructure}
                             </a>
@@ -147,20 +166,23 @@ function Footer({translation}:any) {
                     </p>
 
                     <iframe
-                        className={`w-full h-full max-xl:h-[400px] max-sm:h-[200px] mt-6`}
-                        src={`https://yandex.uz/map-widget/v1/?ll=66.942723%2C39.654220&mode=whatshere&whatshere%5Bpoint%5D=66.935633%2C39.658443&whatshere%5Bzoom%5D=17&z=17.4166.942723%2C39.654220&mode=whatshere&whatshere%5Bpoint%5D=66.935633%2C39.658443&whatshere%5Bzoom%5D=17&z=17.41`}
                         loading="lazy"
-                    ></iframe> 
+                        className={`w-full h-full max-xl:h-[400px] max-sm:h-[200px] mt-6`}
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A3eff3b60f296d746ba3d38d52d423df71aa54d150283eb7557df60537fd65832&amp;source=constructor"
+                        frameBorder="0"
+                    ></iframe>
                 </div>
             </div>
 
             <hr className="w-full border border-white max-lg:hidden" />
 
             <p className="text-center text-white py-5 max-sm:py-2 max-sm:text-xs">
-            © 2023 all right reserved
+                © 2023 all right reserved
             </p>
         </footer>
     );
 }
 
 export default Footer;
+
+//  target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A3eff3b60f296d746ba3d38d52d423df71aa54d150283eb7557df60537fd65832&amp;width=600&amp;height=400&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
