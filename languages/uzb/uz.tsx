@@ -18,7 +18,7 @@ const uz = {
     },
     section2: {
         title: "Biz 12 yildan beri bilim berib kelyapmiz",
-        text: "Texnikumda o`quv jarayonida darslar o`zbek va rus tillarida olib boriladi. O`quv xonalari yuqori tezlikdagi internet bilan ta`minlangan. Texnikumda na`munaviy o`quv rejadagi soatlardan tashqari ingliz va nemis tillari tibbiy termilar asosida qo`shimcha o`qitiladi.",
+        text: "Texnikumda o'quv jarayonida darslar o'zbek va rus tillarida o'tkaziladi. Sinf xonalarida yuqori tezlikdagi Internet mavjud. Soatlardan tashqari texnikumdagi namunaviy o'quv dasturida tibbiy atamalar asosida ingliz va nemis tillari o'qitiladi",
     },
     section3: {
         title: "Yo'nalishlar",
