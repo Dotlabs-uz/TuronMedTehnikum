@@ -13,7 +13,7 @@ const uz = {
         bottomBlock: {
             first: "O`qituvchi",
             secant: "Ingliz va Nemis tillari",
-            third: "Germaniyada ishlash inkoniyati",
+            third: "Germaniyada ishlash imkoniyati",
         },
     },
     section2: {
