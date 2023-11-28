@@ -159,44 +159,11 @@ export default function Home() {
                 <div className="w-full h-20 max-lg:h-16 max-sm:h-11 bg-[#032D6C] my-14 max-lg:my-10 max-sm:my-8"></div>
 
                 <section id="direction" className="section_3">
-                    <p className="text-[#032D6C] text-center text-4xl max-xl:text-3xl font-bold mb-20 max-xl:mb-10 max-sm:mb-8">
+                    <p className="text-[#032D6C] text-center text-4xl max-xl:text-3xl font-bold mb-10 max-sm:mb-8">
                         {translation.section3.title}
                     </p>
 
-                    <div className="custom_container max-lg:hidden">
-                        <Swiper spaceBetween={50} slidesPerView={3}>
-                            {translation.section3.directions.map(
-                                (item: any) => (
-                                    <SwiperSlide
-                                        key={item.id}
-                                        className="text-center"
-                                    >
-                                        <div className="w-[360px] bg-white p-5 m-auto rounded">
-                                            <Image
-                                                src={item.img}
-                                                width={200}
-                                                height={100}
-                                                alt=""
-                                                className="w-full rounded"
-                                            />
-                                            <p className="text-2xl text-[#032D6C] font-bold text-center mt-5">
-                                                {item.title}
-                                            </p>
-                                            <div className="flex flex-col gap-5 text-start text-[#032D6C] mt-5">
-                                                <p>{item?.text1}</p>
-                                                <p>{item?.text2}</p>
-                                                <p>{item?.text3}</p>
-                                                <p>{item?.text4}</p>
-                                                <p>{item?.text5}</p>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                )
-                            )}
-                        </Swiper>
-                    </div>
-
-                    <div className="custom_container lg:hidden">
+                    <div className="custom_container flex gap-5 max-lg:flex-col">
                         {translation.section3.directions.map((item: any) => (
                             <div
                                 key={item.id}

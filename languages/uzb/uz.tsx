@@ -56,7 +56,7 @@ const uz = {
     },
     section5: {
         title: "Yo'nalishlar",
-        block1_text: "Feldsher akusherlik ishi",
+        block1_text: "Feldsherlik ishi",
         block2_text: "Stomatologiya",
         block3_text: "Hamshiralik ishi",
         block4_text: "Farmatsiya",
