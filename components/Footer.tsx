@@ -91,12 +91,12 @@ function Footer({ translation }: any) {
             <div className="custom_container flex max-xl:flex-col items-start max-xl:items-center justify-center gap-16 max-sm:gap-7 pb-16 max-sm:pb-0">
                 <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
                     <Image src="/logo.png" width={190} height={50} alt="" />
-                    <div className="flex items-center gap-5 mt-6">
+                    <div className="flex items-center justify-center gap-5 mt-6">
                         {/* <BsWhatsapp size={25} color="white" /> */}
                         <Link href="https://www.facebook.com/profile.php?id=100026747054522">
                             <FiFacebook size={25} color="white" />
                         </Link>
-                        <PiTelegramLogo size={25} color="white" />
+                        {/* <PiTelegramLogo size={25} color="white" /> */}
                         <Link href="https://www.instagram.com/nematkuchkarov">
                             <BsInstagram size={25} color="white" />
                         </Link>
@@ -112,10 +112,6 @@ function Footer({ translation }: any) {
                             <div className="footer_flex">
                                 <IoLocationOutline size={25} color="white" />
                                 {translation.contact.location}
-                            </div>
-                            <div className="footer_flex">
-                                <TfiEmail size={25} color="white" />
-                                info@school.edu
                             </div>
                             <div className="footer_flex">
                                 <FiPhoneCall size={25} color="white" />

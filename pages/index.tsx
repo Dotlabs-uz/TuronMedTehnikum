@@ -22,12 +22,14 @@ export default function Home() {
                         <div className="bg-[#0000ff52] w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
                     </div>
                     <div className="rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px] flex flex-col items-center pt-[300px] max-xl:pt-[200px] max-md:pt-[150px] max-sm:pt-[120px] relative">
-                        <p className="z-10 text-4xl max-xl:text-3xl max-lg:text-2xl max-sm:text-xl text-white">
-                            {translation.section1.text}
-                        </p>
-                        <h1 className="w-[1000px] max-lg:w-[600px] max-sm:w-[85%] z-10 text-7xl  max-xl:text-6xl max-lg:text-5xl max-sm:text-4xl max-[400px]:text-3xl text-white text-center mt-5 max-sm:mt-2">
-                            {translation.section1.title}
-                        </h1>
+                        <div className="flex flex-col items-center justify-center w-full max-w-[1000px] max-xl:max-w-[700px] max-lg:max-w-[500px] max-sm:w-[90%]">
+                            <h1 className="w-[1000px] max-lg:w-[600px] max-sm:w-[85%] z-10 text-6xl  max-xl:text-5xl max-lg:text-4xl max-sm:text-3xl max-[400px]:text-2xl text-white text-center font-bold">
+                                {translation.section1.title}
+                            </h1>
+                            <p className="z-10 text-4xl max-xl:text-3xl max-lg:text-2xl max-sm:text-xl text-white mt-10 max-lg:mt-5 max-sm:mt-2 text-center">
+                                {translation.section1.text}
+                            </p>
+                        </div>
 
                         <div className="w-[1200px] max-xl:w-[900px] z-10 grid grid-cols-3 gap-10 absolute -bottom-[100px] max-lg:hidden">
                             <div className="p-10 max-xl:p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
@@ -129,6 +131,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+
                 <section id="about" className="mt-40 max-lg:mt-0 section_2">
                     <div className="custom_container">
                         <div className="flex items-center justify-end max-lg:hidden">
@@ -141,12 +144,14 @@ export default function Home() {
                         </div>
                         <div className="mt-20 max-lg:mt-10 max-sm:mt-5 flex max-lg:flex-col items-center justify-between gap-20 max-lg:gap-10">
                             <div className="w-full flex items-center justify-center flex-col">
-                                <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-lg:text-4xl max-sm:text-3xl font-bold text-center max-w-[400px]">
+                                <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-lg:text-4xl max-sm:text-3xl font-bold text-center max-w-[500px]">
                                     {translation.section2.title}
                                 </p>
-                                <p className="text-[#032D6C] max-sm:text-sm text-center mt-7 max-sm:mt-5  max-w-[600px]">
-                                    {translation.section2.text}
-                                </p>
+                                <div className="text-[#032D6C] max-sm:text-sm text-start max-w-[500px] mt-7 max-sm:mt-5">
+                                    <p>1. {translation.section2.text1}</p><br />
+                                    <p>2. {translation.section2.text2}</p><br />
+                                    <p>3. {translation.section2.text3}</p>
+                                </div>
                             </div>
                             <div className="grid grid-cols-3 gap-5 w-[50%] max-lg:w-full">
                                 <div className="bg-[url('/section2/8.webp')] bg-center bg-cover bg-no-repeat h-[160px] max-lg:h-[300px] max-sm:h-[200px] col-start-1 col-end-4"></div>
@@ -197,7 +202,14 @@ export default function Home() {
                     </p>
                     <div className="mt-20 max-xl:mt-16 max-lg:mt-10 h-[700px] max-xl:h-[550xp] max-lg:h-[450px] max-md:h-[350px] max-sm:h-[250px] max-[400px]:h-[200px] bg-cover bg-no-repeat bg-center relative">
                         {/* <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full flex items-center justify-center"> */}
-                        <iframe className="w-[80%] h-full m-auto" src="https://www.youtube.com/embed/XT1VYTJVKto?si=z-KwgHu_PlRBIGZB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <iframe
+                            className="w-[80%] h-full m-auto"
+                            src="https://www.youtube.com/embed/XT1VYTJVKto?si=z-KwgHu_PlRBIGZB"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
                         {/* </div> */}
                     </div>
                 </section>
@@ -313,7 +325,7 @@ export default function Home() {
                         <p className="text-[#032D6C] text-4xl max-xl:text-3xl font-bold text-center">
                             {translation.section7.title}
                         </p>
-                        <p className="mt-10 max-md:mt-5 text-[#032D6C] text-center">
+                        <p className="mt-10 max-md:mt-5 text-[#032D6C] text-center max-w-[1000px] max-lg:max-w-[700px] max-md:max-w-[600px] max-sm:w-full m-auto">
                             {translation.section7.text}
                         </p>
 

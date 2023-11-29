@@ -8,8 +8,8 @@ const uz = {
         consult: "Konsultatsiya",
     },
     section1: {
-        text: "Maktabga xush kelibsiz",
-        title: "Ta'lim hayotdagi muvaffaqiyatning eng yaxshi kalitidir",
+        title: "Yangi ochilgan asal texnikumiga xush kelibsiz",
+        text: "Fan va innovatsiyalar oliy ta'lim vazirligi huzurida ochilgan",
         bottomBlock: {
             first: "O`qituvchi",
             secant: "Ingliz va Nemis tillari",
@@ -18,14 +18,16 @@ const uz = {
     },
     section2: {
         title: "Biz 12 yildan beri bilim berib kelyapmiz",
-        text: "Texnikumda o'quv jarayonida darslar o'zbek va rus tillarida o'tkaziladi. Sinf xonalarida yuqori tezlikdagi Internet mavjud. Soatlardan tashqari texnikumdagi namunaviy o'quv dasturida tibbiy atamalar asosida ingliz va nemis tillari o'qitiladi",
+        text1: "Texnikumda o'quv jarayonida darslar o'zbek va rus tillarida o'tkaziladi.",
+        text2: "Sinf xonalarida yuqori tezlikdagi Internet mavjud.",
+        text3: "Soatlardan tashqari texnikumdagi namunaviy o'quv dasturida tibbiy atamalar asosida ingliz va nemis tillari o'qitiladi",
     },
     section3: {
         title: "Yo'nalishlar",
         directions: [
             {
                 id: 1,
-                img: "/section3/section3_slide_1.JPG",
+                img: "/section3/hamshiralik.webp",
                 title: "Hamshiralik ishi",
                 text1: "1. Mulkchilik shaklidan qat’iy nazar barcha turdagi davolash-profilaktika muassasalarida, tuman tibbiyot birlashmalari, viloyat va Respublika barcha tibbiyot muassasalarida;",
                 text2: "2. Respublika shoshilinch tibbiy yordam ilmiy markazi va uning filiallarida, ixtisoslashtirilgan ilmiy markazlarida, ilmiy-tekshirish institutlari klinikalarida, markazlashgan sterilizatsiya bo‘limlarida;",
@@ -33,7 +35,7 @@ const uz = {
             },
             {
                 id: 2,
-                img: "/section3/section3_slide_2.JPG",
+                img: "/section3/farmatsiy.webp",
                 title: "Farmasiya",
                 text1: "1. «Dori–darmon» davlat aksiyadorlik uyushmasiga qarashli mulkchilik shaklidan qat’iy nazar dorixonada;",
                 text2: "2. Tayyor dori-darmonlar, parafarmatsevtik mahsulot va tibbiy buyumlarini, bemorlarni parvarishda ishlatiladigan buyumlarni, sanitariya va gigiena buyumlarini sotadigan, dorivor o‘simliklar va ulardan sharbatlar tayyorlaydigan dorixonalar bo‘limlarida;",
@@ -43,7 +45,7 @@ const uz = {
             },
             {
                 id: 3,
-                img: "/section3/section3_slide_3.png",
+                img: "/section3/ferdsherlik.webp",
                 title: "Feldsherlik ishi",
                 text1: "1. Respublika shoshilinch tibbiy yordam ilmiy markazi va uning filiallarida, shoshilinch va tez tibbiy yordam ko‘rsatish stansiya (bo‘lim)larida, ixtisoslashtirilgan ilmiy markazlarida, ilmiy-tekshirish institutlari klinikalarida; ",
                 text2: "2. Mulkchilik shaklidan qat’iy nazar barcha turdagi davolash-profilaktika muassasalarida, QVP (qishloq vrachlik punkti) larda, tuman tibbiyot birlashmalari, viloyat va Respublika tibbiyot muassasalarida;",
