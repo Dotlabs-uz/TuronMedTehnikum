@@ -8,8 +8,9 @@ const uz = {
         consult: "Konsultatsiya",
     },
     section1: {
-        title: "Yangi ochilgan asal texnikumiga xush kelibsiz",
+        title: "Yangi ochilgan med texnikumiga xush kelibsiz",
         text: "Fan va innovatsiyalar oliy ta'lim vazirligi huzurida ochilgan",
+        text2: "Samarqand shahri yangisi Turon tibbiyot texnikumida",
         bottomBlock: {
             first: "O`qituvchi",
             secant: "Ingliz va Nemis tillari",

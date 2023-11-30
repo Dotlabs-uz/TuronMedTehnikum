@@ -1,16 +1,33 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FaPlay } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import Footer from "@/components/Footer";
-import { useContext } from "react";
+import { useContext, useRef, useState } from "react";
 import TranslateContext from "@/context/useTranslate";
 
 export default function Home() {
     const translation: any = useContext(TranslateContext);
+    const iframeVideo = useRef(null);
+    const [modalIframe, setModalIframe] = useState(false);
+    const [iframeSrc, setIframeSrc] = useState("");
+
+    const handleOpenVideo = (boolean: any, src: any) => {
+        setIframeSrc(src);
+
+        if (boolean) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        setModalIframe(boolean);
+    };
 
     return (
         <>
@@ -18,7 +35,7 @@ export default function Home() {
             <main className="overflow-hidden relative">
                 <section className="section_1">
                     <div className="w-[160%] max-[450px]:w-[190%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2  rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px]">
-                        <div className="bg-[url('/section1.webp')] bg-center bg-no-repeat bg-cover w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
+                        <div className="bg-[url('/section1.webp')]  bg-center bg-no-repeat bg-cover w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
                         <div className="bg-[#0000ff52] w-[100vw] h-full absolute top-0 left-1/2 -translate-x-1/2"></div>
                     </div>
                     <div className="rounded-b-full h-[1000px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[550px] max-sm:h-[400px] flex flex-col items-center pt-[300px] max-xl:pt-[200px] max-md:pt-[150px] max-sm:pt-[120px] relative">
@@ -28,6 +45,9 @@ export default function Home() {
                             </h1>
                             <p className="z-10 text-4xl max-xl:text-3xl max-lg:text-2xl max-sm:text-xl text-white mt-10 max-lg:mt-5 max-sm:mt-2 text-center">
                                 {translation.section1.text}
+                            </p>
+                            <p className="z-10 text-3xl max-xl:text-2xl max-lg:text-xl max-sm:text-lg text-white mt-5 max-lg:mt-3 max-sm:mt-1 text-center">
+                                {translation.section1.text2}
                             </p>
                         </div>
 
@@ -148,14 +168,28 @@ export default function Home() {
                                     {translation.section2.title}
                                 </p>
                                 <div className="text-[#032D6C] max-sm:text-sm text-start max-w-[500px] mt-7 max-sm:mt-5">
-                                    <p>1. {translation.section2.text1}</p><br />
-                                    <p>2. {translation.section2.text2}</p><br />
+                                    <p>1. {translation.section2.text1}</p>
+                                    <br />
+                                    <p>2. {translation.section2.text2}</p>
+                                    <br />
                                     <p>3. {translation.section2.text3}</p>
                                 </div>
                             </div>
                             <div className="grid grid-cols-3 gap-5 w-[50%] max-lg:w-full">
-                                <div className="bg-[url('/section2/8.webp')] bg-center bg-cover bg-no-repeat h-[160px] max-lg:h-[300px] max-sm:h-[200px] col-start-1 col-end-4"></div>
-                                <div className="bg-[url('/section2/7.webp')] bg-center bg-cover bg-no-repeat h-[200px] max-lg:h-[300px] max-sm:h-[210px] row-start-2 row-end-3 col-start-1 col-end-4"></div>
+                                <div className="bg-[url('/section1.webp')] bg-center bg-cover bg-no-repeat h-[200px] max-lg:h-[300px] max-sm:h-[200px] col-start-1 col-end-4"></div>
+                                <div className="bg-[url('/section2/poto1.webp')] bg-center bg-cover bg-no-repeat h-[200px] max-lg:h-[300px] max-sm:h-[200px] row-start-2 row-end-3 col-start-1 col-end-4">
+                                    <div
+                                        onClick={() =>
+                                            handleOpenVideo(
+                                                true,
+                                                "https://www.youtube.com/embed/DlbS5mWYuc8?autoplay=1"
+                                            )
+                                        }
+                                        className="bg-[#0000ff7d] h-full w-full flex items-center justify-center cursor-pointer"
+                                    >
+                                        <FaPlay size={30} color="white" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,17 +234,20 @@ export default function Home() {
                     <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-[400px]:text-3xl font-bold text-center">
                         {translation.section4.title}
                     </p>
-                    <div className="mt-20 max-xl:mt-16 max-lg:mt-10 h-[700px] max-xl:h-[550xp] max-lg:h-[450px] max-md:h-[350px] max-sm:h-[250px] max-[400px]:h-[200px] bg-cover bg-no-repeat bg-center relative">
-                        {/* <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full flex items-center justify-center"> */}
-                        <iframe
-                            className="w-[80%] h-full m-auto"
-                            src="https://www.youtube.com/embed/XT1VYTJVKto?si=z-KwgHu_PlRBIGZB"
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen
-                        ></iframe>
-                        {/* </div> */}
+                    <div className="mt-20 max-xl:mt-16 max-lg:mt-10 h-[800px] max-xl:h-[550xp] max-lg:h-[450px] max-md:h-[350px] max-sm:h-[250px] max-[400px]:h-[200px] bg-[url('/section1.webp')] bg-cover bg-no-repeat bg-center relative">
+                        <div className="bg-[#0000ff5d] absolute top-0 left-0 h-full w-full flex items-center justify-center">
+                                <FaPlay
+                                    onClick={() =>
+                                        handleOpenVideo(
+                                            true,
+                                            "https://www.youtube.com/embed/oiL7GdxBkY4?autoplay=1"
+                                        )
+                                    }
+                                    size={50}
+                                    color="white"
+                                    className="max-sm:w-[30px] max-sm:h-[30px] cursor-pointer"
+                                />
+                        </div>
                     </div>
                 </section>
 
@@ -226,7 +263,7 @@ export default function Home() {
                                 </p>
                             </div>
                             <Image
-                                src={"/section5/section5_1.png"}
+                                src={"/section5/section5_1.webp"}
                                 width={200}
                                 height={200}
                                 alt=""
@@ -241,7 +278,7 @@ export default function Home() {
                                 </p>
                             </div>
                             <Image
-                                src={"/section5/section5_2.jpg"}
+                                src={"/section5/section5_2.webp"}
                                 width={200}
                                 height={200}
                                 alt=""
@@ -256,7 +293,7 @@ export default function Home() {
                                 </p>
                             </div>
                             <Image
-                                src={"/section5/section5_3.png"}
+                                src={"/section5/section5_3.webp"}
                                 width={200}
                                 height={200}
                                 alt=""
@@ -271,7 +308,7 @@ export default function Home() {
                                 </p>
                             </div>
                             <Image
-                                src={"/section5/section5_4.png"}
+                                src={"/section5/section5_4.webp"}
                                 width={200}
                                 height={200}
                                 alt=""
@@ -287,28 +324,28 @@ export default function Home() {
                     </p>
                     <div className="flex items-center justify-center gap-10 max-lg:gap-5 max-sm:gap-4 max-[400px]:gap-2 max-lg:flex-wrap m-auto custom_container">
                         <Image
-                            src={"/section6/1.jpg"}
+                            src={"/section6/1.webp"}
                             width={260}
                             height={350}
                             alt=""
                             className="max-sm:w-[140px] max-sm:h-[200px]"
                         />
                         <Image
-                            src={"/section6/2.jpg"}
+                            src={"/section6/2.webp"}
                             width={260}
                             height={350}
                             alt=""
                             className="max-sm:w-[140px] max-sm:h-[200px]"
                         />
                         <Image
-                            src={"/section6/3.jpg"}
+                            src={"/section6/3.webp"}
                             width={260}
                             height={350}
                             alt=""
                             className="max-sm:w-[140px] max-sm:h-[200px]"
                         />
                         <Image
-                            src={"/section6/4.jpg"}
+                            src={"/section6/4.webp"}
                             width={260}
                             height={350}
                             alt=""
@@ -359,6 +396,27 @@ export default function Home() {
                 </section>
             </main>
             <Footer translation={translation.footer} />
+            {modalIframe ? (
+                <div className="fixed top-0 left-0 w-full h-screen bg-[#000000af] flex items-center justify-center z-50">
+                    <IoClose
+                        size={40}
+                        color="white"
+                        className="absolute top-5 right-5 cursor-pointer"
+                        onClick={() => handleOpenVideo(false, "")}
+                    />
+                    <iframe
+                        ref={iframeVideo}
+                        width="343"
+                        height="610"
+                        src={iframeSrc}
+                        title="video"
+                        frameBorder="0"
+                        allow="autoplay"
+                        allowFullScreen
+                        className="w-[450px] h-[820px] max-sm:w-full max-sm:h-screen"
+                    ></iframe>
+                </div>
+            ) : null}
         </>
     );
 }

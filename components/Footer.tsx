@@ -115,8 +115,8 @@ function Footer({ translation }: any) {
                             </div>
                             <div className="footer_flex">
                                 <FiPhoneCall size={25} color="white" />
-                                <a href="tel:+998990381200">
-                                    +998(99) 038-12-00
+                                <a href="tel:+998939170990">
+                                    +998(93) 917-09-90
                                 </a>
                             </div>
                         </div>
@@ -162,6 +162,9 @@ function Footer({ translation }: any) {
                 </div>
 
                 <div className="text-white max-xl:w-full max-sm:flex max-sm:items-center max-sm:flex-col max-sm:justify-center">
+
+                    <Image src={'/map.png'} width={200} height={100} alt="" className="m-auto mb-10 w-full max-xl:w-[33%] max-md:w-[300px] max-sm:w-[200px] rounded-xl"/>
+
                     <p className="text-[24px] max-sm:text-xl font-bold max-xl:text-center">
                         {translation.map}
                     </p>
