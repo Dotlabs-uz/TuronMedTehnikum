@@ -189,5 +189,3 @@ function Footer({ translation }: any) {
 }
 
 export default Footer;
-
-//  target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A3eff3b60f296d746ba3d38d52d423df71aa54d150283eb7557df60537fd65832&amp;width=600&amp;height=400&amp;lang=ru_RU" alt="" style="border: 0;" /></a>

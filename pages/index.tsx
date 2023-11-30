@@ -46,9 +46,6 @@ export default function Home() {
                             <p className="z-10 text-4xl max-xl:text-3xl max-lg:text-2xl max-sm:text-xl text-white mt-10 max-lg:mt-5 max-sm:mt-2 text-center">
                                 {translation.section1.text}
                             </p>
-                            <p className="z-10 text-3xl max-xl:text-2xl max-lg:text-xl max-sm:text-lg text-white mt-5 max-lg:mt-3 max-sm:mt-1 text-center">
-                                {translation.section1.text2}
-                            </p>
                         </div>
 
                         <div className="w-[1200px] max-xl:w-[900px] z-10 grid grid-cols-3 gap-10 absolute -bottom-[100px] max-lg:hidden">
@@ -108,7 +105,7 @@ export default function Home() {
                     <div className="w-[90%] z-10 grid grid-cols-1 gap-10 max-sm:gap-5 m-auto">
                         <div className="w-[70%] shadow-lg max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
                             <Image
-                                src={"/section1/section1_bottom1.png"}
+                                src={"/section1/section1_bottom1.webp"}
                                 width={114}
                                 height={120}
                                 alt=""
@@ -123,7 +120,7 @@ export default function Home() {
                         </div>
                         <div className="w-[70%] shadow-lg max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
                             <Image
-                                src={"/section1/section1_bottom2.png"}
+                                src={"/section1/section1_bottom2.webp"}
                                 width={114}
                                 height={120}
                                 alt=""
@@ -137,7 +134,7 @@ export default function Home() {
                         </div>
                         <div className="w-[70%] shadow-lg max-sm:w-full m-auto p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
                             <Image
-                                src={"/section1/section1_bottom3.png"}
+                                src={"/section1/section1_bottom3.webp"}
                                 width={114}
                                 height={120}
                                 alt=""
@@ -164,7 +161,7 @@ export default function Home() {
                         </div>
                         <div className="mt-20 max-lg:mt-10 max-sm:mt-5 flex max-lg:flex-col items-center justify-between gap-20 max-lg:gap-10">
                             <div className="w-full flex items-center justify-center flex-col">
-                                <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-lg:text-4xl max-sm:text-3xl font-bold text-center max-w-[500px]">
+                                <p className="text-[#032D6C] text-4xl max-xl:text-3xl max-lg:text-4xl max-sm:text-3xl font-bold max-lg:text-center max-w-[500px]">
                                     {translation.section2.title}
                                 </p>
                                 <div className="text-[#032D6C] max-sm:text-sm text-start max-w-[500px] mt-7 max-sm:mt-5">

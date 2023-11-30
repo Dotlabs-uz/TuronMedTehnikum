@@ -8,9 +8,8 @@ const uz = {
         consult: "Konsultatsiya",
     },
     section1: {
-        title: "Yangi ochilgan med texnikumiga xush kelibsiz",
+        title: "Samarqand shahridagi yangi ochilgan med texnikumiga xush kelibsiz",
         text: "Fan va innovatsiyalar oliy ta'lim vazirligi huzurida ochilgan",
-        text2: "Samarqand shahri yangisi Turon tibbiyot texnikumida",
         bottomBlock: {
             first: "O`qituvchi",
             secant: "Ingliz va Nemis tillari",
@@ -18,7 +17,7 @@ const uz = {
         },
     },
     section2: {
-        title: "Biz 12 yildan beri bilim berib kelyapmiz",
+        title: "Samarqand shahridagi yangi Turon tibbiyot texnikumida",
         text1: "Texnikumda o'quv jarayonida darslar o'zbek va rus tillarida o'tkaziladi.",
         text2: "Sinf xonalarida yuqori tezlikdagi Internet mavjud.",
         text3: "Soatlardan tashqari texnikumdagi namunaviy o'quv dasturida tibbiy atamalar asosida ingliz va nemis tillari o'qitiladi",
