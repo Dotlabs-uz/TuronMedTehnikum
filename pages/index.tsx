@@ -54,7 +54,7 @@ export default function Home() {
                         <div className="w-[1200px] max-xl:w-[900px] z-10 grid grid-cols-3 gap-10 absolute -bottom-[100px] max-lg:hidden">
                             <div className="p-10 max-xl:p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
                                 <Image
-                                    src={"/section1/section1_bottom1.png"}
+                                    src={"/section1/section1_bottom1.webp"}
                                     width={114}
                                     height={120}
                                     alt=""
@@ -71,7 +71,7 @@ export default function Home() {
                             </div>
                             <div className="p-10 max-xl:p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
                                 <Image
-                                    src={"/section1/section1_bottom2.png"}
+                                    src={"/section1/section1_bottom2.webp"}
                                     width={114}
                                     height={120}
                                     alt=""
@@ -88,7 +88,7 @@ export default function Home() {
                             </div>
                             <div className="p-10 max-xl:p-7 bg-white flex flex-col justify-center items-center gap-5 rounded-[36px]">
                                 <Image
-                                    src={"/section1/section1_bottom3.png"}
+                                    src={"/section1/section1_bottom3.webp"}
                                     width={114}
                                     height={120}
                                     alt=""
