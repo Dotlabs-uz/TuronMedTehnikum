@@ -69,6 +69,7 @@ function Footer({ translation }: any) {
                     <InputMask
                         mask="+\9\98-(99)-999-99-99"
                         placeholder={translation.form.input_text}
+                        required
                         {...register("number", { required: true })}
                         value={number}
                         onChange={(e: any) => setNumber(e.target.value)}
