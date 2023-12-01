@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { BsWhatsapp, BsInstagram, BsArrowRightCircle } from "react-icons/bs";
+import { BsInstagram, BsArrowRightCircle } from "react-icons/bs";
 import { FiFacebook, FiPhoneCall } from "react-icons/fi";
-import { PiTelegramLogo } from "react-icons/pi";
 import { IoLocationOutline } from "react-icons/io5";
-import { TfiEmail } from "react-icons/tfi";
 import InputMask from "react-input-mask";
 import Image from "next/image";
 import { useForm, SubmitHandler } from "react-hook-form";

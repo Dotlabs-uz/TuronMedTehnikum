@@ -10,6 +10,7 @@ import "swiper/css/effect-fade";
 import Footer from "@/components/Footer";
 import { useContext, useRef, useState } from "react";
 import TranslateContext from "@/context/useTranslate";
+import HeadMeta from "@/components/HeadMeta";
 
 export default function Home() {
     const translation: any = useContext(TranslateContext);
@@ -31,6 +32,7 @@ export default function Home() {
 
     return (
         <>
+            <HeadMeta />
             <Header translation={translation.header} />
             <main className="overflow-hidden relative">
                 <section className="section_1">
