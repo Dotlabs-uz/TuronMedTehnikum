@@ -21,7 +21,7 @@ const HeadMeta: React.FC<IHeadMeta> = () => {
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
             />
-            <link rel="canonical" href="https://example.com" />
+            <link rel="canonical" href="https://resplendent-zuccutto-be76bf.netlify.app/" />
             <meta name="author" content="Турон медицинский техникум" />
             <link rel="icon" type="image/png" href="/logo.png" />
         </Head>
