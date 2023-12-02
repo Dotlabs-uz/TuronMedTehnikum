@@ -28,7 +28,7 @@ const HeadMeta: React.FC<IHeadMeta> = () => {
             <meta name="author" content="Турон медицинский техникум" />
             <link rel="icon" type="image/png" href="/logo.png" />
             <meta property="og:title" content="Turon med texnikum" />
-            <meta property="og:type" content="" />
+            <meta property="og:type" content="website" />
             <meta property="og:description" content="Турон медицинский техникум" />
             <meta
                 property="og:url"
@@ -36,7 +36,7 @@ const HeadMeta: React.FC<IHeadMeta> = () => {
             />
             <meta
                 property="og:image"
-                content="/logo.png"
+                content="https://resplendent-zuccutto-be76bf.netlify.app/_ipx/w_128,q_75/%2Flogo.png"
             />
         </Head>
     );
