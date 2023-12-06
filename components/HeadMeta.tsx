@@ -19,7 +19,7 @@ const HeadMeta: React.FC<IHeadMeta> = () => {
             />
             <link
                 rel="canonical"
-                href="https://resplendent-zuccutto-be76bf.netlify.app/"
+                href="https://turon-tibbiyot-texnikum.uz/"
             />
             <meta name="author" content="Турон медицинский техникум" />
             <link rel="icon" type="image/png" href="/logo.png" />
@@ -31,11 +31,11 @@ const HeadMeta: React.FC<IHeadMeta> = () => {
             />
             <meta
                 property="og:url"
-                content="https://resplendent-zuccutto-be76bf.netlify.app/"
+                content="https://turon-tibbiyot-texnikum.uz/"
             />
             <meta
                 property="og:image"
-                content="https://resplendent-zuccutto-be76bf.netlify.app/_ipx/w_128,q_75/%2Flogo.png"
+                content="https://turon-tibbiyot-texnikum.uz/_ipx/w_128,q_75/%2Flogo.png"
             />
         </Head>
     );
